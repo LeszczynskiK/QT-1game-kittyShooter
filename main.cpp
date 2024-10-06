@@ -6,6 +6,7 @@
 #include "Character.h"
 #include "Enemy.h"
 #include "Map_setter.h"
+#include "Bullet.h"
 using namespace std;
 
 //size of screen
