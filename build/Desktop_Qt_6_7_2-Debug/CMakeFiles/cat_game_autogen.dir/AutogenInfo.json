@@ -364,6 +364,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h",
+			"MU",
+			"EWIEGA46WW/moc_Bullet.cpp",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h",
 			"MU",
 			"EWIEGA46WW/moc_Character.cpp",
@@ -441,6 +447,11 @@
 	"SETTINGS_FILE" : "/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/cat_game_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.cpp",
 			"MU",
