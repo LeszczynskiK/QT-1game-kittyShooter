@@ -1,0 +1,12 @@
+# ninja log v6
+4	1680	1728292616817367135	cat_game_autogen/timestamp	a69b856319eb6435
+4	1680	1728292616817367135	cat_game_autogen/mocs_compilation.cpp	a69b856319eb6435
+4	1680	1728292616817367135	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Release/cat_game_autogen/timestamp	a69b856319eb6435
+4	1680	1728292616817367135	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Release/cat_game_autogen/mocs_compilation.cpp	a69b856319eb6435
+1691	9440	1728292616853367431	CMakeFiles/cat_game.dir/Map_setter.cpp.o	9bcc8613e5c150ca
+1691	9536	1728292616853367431	CMakeFiles/cat_game.dir/Bullet.cpp.o	269afe0835eeedec
+1690	9660	1728292616853367431	CMakeFiles/cat_game.dir/Enemy.cpp.o	465f0a504754f9
+1686	10231	1728292616849367398	CMakeFiles/cat_game.dir/main.cpp.o	e472c83fd29c3f8f
+1689	10719	1728292616849367398	CMakeFiles/cat_game.dir/Character.cpp.o	387dd1fcd6449d5e
+1685	12431	1728292616845367365	CMakeFiles/cat_game.dir/cat_game_autogen/mocs_compilation.cpp.o	e1f02e0162b98f1b
+12431	13825	1728292627593456781	cat_game	a83c6b8760b6c83f

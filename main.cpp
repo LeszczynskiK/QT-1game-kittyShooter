@@ -2,6 +2,7 @@
 #include <QGraphicsPixmapItem>
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QPixmap>
 #include <iostream>
 #include "Character.h"
 #include "Enemy.h"
@@ -16,6 +17,14 @@ const int y_pos = 768;
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    //initialize textures(only once, in the beggining of program)
+    //static option is more optimised than in constructor
+    Bullet::initializeTextures();
+    Character::initializeTextures();
+    Enemy::initializeTextures();
+    Map_setter::initializeTextures(x_pos,y_pos);
+
     Character *character = new Character(x_pos,y_pos);//constructor of main character
 
     //its important to set scene and view size, becouse positioning character without this
@@ -28,16 +37,16 @@ int main(int argc, char *argv[])
     Enemy *enemy = new Enemy();//spawn enemy
     scene->addItem(enemy);
 
-    //background adding
-    Map_setter map_setter;
-    map_setter.choose_map(scene,x_pos,y_pos);//add background to scene(your scene)
+
+    Map_setter *map_setter = new Map_setter();
+    map_setter->setZValue(-1);//background - last layer
+    scene->addItem(map_setter);
 
     QGraphicsView *view = new QGraphicsView(scene);//view creating
     view ->setFixedSize(x_pos,y_pos);
     view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     view->show();
-
 
     return a.exec();
 }

@@ -1,8 +1,16 @@
 #include "Bullet.h"
 
+QPixmap Bullet::texture;//static initialization od texture
+
+void Bullet::initializeTextures()
+{
+    texture=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/paw1.png").scaled(57,57,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    cout<<"inicjalizacja"<<endl;
+}
+
 Bullet::Bullet() {
-    QPixmap bullett_text("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/paw1.png");
-    setPixmap(bullett_text.scaled(57,57,Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    cout<<"Konstruktor"<<endl;
+    setPixmap(texture);
 
     QTimer *timer3 = new QTimer();
     connect(timer3,SIGNAL(timeout()),this,SLOT(move()));

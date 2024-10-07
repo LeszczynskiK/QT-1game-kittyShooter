@@ -14,11 +14,12 @@ class Enemy : public QObject, public QGraphicsPixmapItem
     Q_OBJECT;
 public:
     Enemy();
+    static void initializeTextures();
 public slots:
     void move();
     void spawn();
 private:
-    QPixmap enemyTextures[10];
+    static QPixmap texture[10];
 };
 
 #endif // ENEMY_H

@@ -16,8 +16,11 @@ class Character : public QObject, public QGraphicsPixmapItem
     Q_OBJECT;
 public:
     Character(int size_x,int size_y);
+    static void initializeTextures();
 public slots:
     void keyPressEvent(QKeyEvent *event);
+private:
+    static QPixmap texture[3];//character textures
 };
 
 #endif // CHARACTER_H

@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-f12850f8538c000e9549.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cat_game",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cat_game::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cat_game-Release-ff2fe26fe06c2cac093a.json",
+					"name" : "cat_game",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cat_game_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cat_game_autogen-Release-6366db5ac2276d7bda39.json",
+					"name" : "cat_game_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cat_game_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cat_game_autogen_timestamp_deps-Release-432474a6c1d2ce9634ad.json",
+					"name" : "cat_game_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Release",
+		"source" : "/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

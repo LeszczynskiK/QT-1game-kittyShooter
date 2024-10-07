@@ -4,11 +4,13 @@
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
 
-class Map_setter
+class Map_setter : public QGraphicsPixmapItem
 {
 public:
     Map_setter();
-    void choose_map(QGraphicsScene *scene_back,int x,int y);
+    static void initializeTextures(int x,int y);
+private:
+    static QPixmap texture[10];
 };
 
 #endif // MAP_SETTER_H

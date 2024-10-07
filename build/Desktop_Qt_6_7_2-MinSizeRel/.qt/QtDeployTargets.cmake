@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_cat_game_FILE /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-MinSizeRel/cat_game)
+set(__QT_DEPLOY_TARGET_cat_game_TYPE EXECUTABLE)

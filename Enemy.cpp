@@ -1,17 +1,23 @@
 #include "Enemy.h"
 
-Enemy::Enemy() {//types of enemy textures
+QPixmap Enemy::texture[10];
+void Enemy::initializeTextures()
+{
+    //types of enemy textures
     // load textures to board to make acces to them in class method
-    enemyTextures[0] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food1.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[1] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food2.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[2] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food3.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[3] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food4.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[4] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food5.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[5] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food6.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[6] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food7.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[7] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food8.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[8] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food9.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    enemyTextures[9] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food10.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[0] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food1.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[1] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food2.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[2] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food3.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[3] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food4.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[4] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food5.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[5] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food6.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[6] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food7.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[7] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food8.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[8] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food9.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    texture[9] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food10.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+}
+
+Enemy::Enemy() {
 
     //timer to slots usage:
     QTimer *timer1 = new QTimer();
@@ -43,7 +49,7 @@ void Enemy::spawn()//creating enemy
     int index =rand()%10;//random index of enemy texture
 
     Enemy *newEnemy = new Enemy();
-    newEnemy->setPixmap(enemyTextures[index].scaled(100,100));
+    newEnemy->setPixmap(texture[index]);
     newEnemy->setPos(ran_x,ran_y);
     scene()->addItem(newEnemy);
 }
