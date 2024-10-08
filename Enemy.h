@@ -7,6 +7,7 @@
 #include <QGraphicsItem>
 #include <QObject>
 #include <QTimer>
+#include "Texture_setter.h"
 #include <iostream>
 
 class Enemy : public QObject, public QGraphicsPixmapItem
@@ -14,12 +15,11 @@ class Enemy : public QObject, public QGraphicsPixmapItem
     Q_OBJECT;
 public:
     Enemy();
-    static void initializeTextures();
 public slots:
     void move();
     void spawn();
 private:
-    static QPixmap texture[10];
+    Texture_setter textureSetter;
 };
 
 #endif // ENEMY_H

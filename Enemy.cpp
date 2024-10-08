@@ -1,30 +1,13 @@
 #include "Enemy.h"
 
-QPixmap Enemy::texture[10];
-void Enemy::initializeTextures()
-{
-    //types of enemy textures
-    // load textures to board to make acces to them in class method
-    texture[0] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food1.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[1] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food2.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[2] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food3.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[3] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food4.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[4] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food5.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[5] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food6.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[6] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food7.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[7] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food8.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[8] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food9.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-    texture[9] = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/food10.png").scaled(100,100,Qt::KeepAspectRatio, Qt::SmoothTransformation);
-}
-
 Enemy::Enemy() {
 
     //timer to slots usage:
     QTimer *timer1 = new QTimer();
     connect(timer1,SIGNAL(timeout()),this,SLOT(spawn()));
-    timer1->start(2500);
+    timer1->start(2000);
 
-    int time_on_beg = 650;
+    int time_on_beg = 750;
     QTimer *timer2 = new QTimer();
     connect(timer2,SIGNAL(timeout()),this,SLOT(move()));
     timer2->start(time_on_beg);
@@ -32,7 +15,7 @@ Enemy::Enemy() {
 
 void Enemy::move()//movement of enemy
 {
-    int jump_value = 20;
+    int jump_value = 40;
     setPos(x(),y()+jump_value);
     if(pos().y() > 768)//if enemy is out of screen, delete from memory
     {
@@ -49,7 +32,7 @@ void Enemy::spawn()//creating enemy
     int index =rand()%10;//random index of enemy texture
 
     Enemy *newEnemy = new Enemy();
-    newEnemy->setPixmap(texture[index]);
+    newEnemy->setPixmap(textureSetter.enemy_txt(index));
     newEnemy->setPos(ran_x,ran_y);
     scene()->addItem(newEnemy);
 }

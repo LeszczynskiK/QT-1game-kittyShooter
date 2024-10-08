@@ -2,6 +2,7 @@
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QRect \

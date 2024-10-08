@@ -3,14 +3,14 @@
 #include <QGraphicsScene>
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
+#include "Texture_setter.h"
 
 class Map_setter : public QGraphicsPixmapItem
 {
 public:
     Map_setter();
-    static void initializeTextures(int x,int y);
 private:
-    static QPixmap texture[10];
+    Texture_setter textureSetter;
 };
 
 #endif // MAP_SETTER_H

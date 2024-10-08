@@ -7,6 +7,7 @@
 #include <QGraphicsItem>
 #include <QTimer>
 #include "Enemy.h"
+#include "Texture_setter.h"
 #include <iostream>
 using namespace std;
 
@@ -15,11 +16,10 @@ class Bullet : public QObject, public QGraphicsPixmapItem
     Q_OBJECT;
 public:
     Bullet();
-    static void initializeTextures();
 public slots:
     void move();
 private:
-    static QPixmap texture;//static - all bullets the same texture, not loading new
+    Texture_setter textureSetter;//instance of method
 };
 
 #endif // BULLET_H

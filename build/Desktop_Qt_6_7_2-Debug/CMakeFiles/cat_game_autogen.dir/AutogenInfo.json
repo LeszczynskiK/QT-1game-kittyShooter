@@ -386,6 +386,12 @@
 			"MU",
 			"EWIEGA46WW/moc_Map_setter.cpp",
 			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h",
+			"MU",
+			"EWIEGA46WW/moc_Texture_setter.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -464,6 +470,11 @@
 		],
 		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.cpp",
 			"MU",
 			null
 		],

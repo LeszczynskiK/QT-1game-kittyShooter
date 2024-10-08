@@ -8,6 +8,7 @@
 #include "Enemy.h"
 #include "Map_setter.h"
 #include "Bullet.h"
+#include "Texture_setter.h"
 using namespace std;
 
 //size of screen
@@ -17,13 +18,8 @@ const int y_pos = 768;
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    Texture_setter *texture_setter = new Texture_setter();//constructor of textures
 
-    //initialize textures(only once, in the beggining of program)
-    //static option is more optimised than in constructor
-    Bullet::initializeTextures();
-    Character::initializeTextures();
-    Enemy::initializeTextures();
-    Map_setter::initializeTextures(x_pos,y_pos);
 
     Character *character = new Character(x_pos,y_pos);//constructor of main character
 

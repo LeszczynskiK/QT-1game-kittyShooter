@@ -8,6 +8,8 @@ cat_game_autogen/timestamp: \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.cpp \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h \
+	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.cpp \
+	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
