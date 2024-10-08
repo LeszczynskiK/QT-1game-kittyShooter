@@ -35,4 +35,9 @@ void Enemy::spawn()//creating enemy
     newEnemy->setPixmap(textureSetter.enemy_txt(index));
     newEnemy->setPos(ran_x,ran_y);
     scene()->addItem(newEnemy);
+    if(pos().y()>768)
+    {
+        scene()->removeItem(this);
+        delete this;
+    }
 }

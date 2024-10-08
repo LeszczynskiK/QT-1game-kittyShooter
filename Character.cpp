@@ -32,5 +32,13 @@ void Character::keyPressEvent(QKeyEvent *event)
         bullet->setPos(x(),y());
         scene()->addItem(bullet);
     }
+    if(pos().x()>1366-pixmap().width())//save from leaving x map
+    {
+        setPos(x()-50,y());
+    }
+    else if(pos().x()<0)
+    {
+        setPos(x()+50,y());
+    }
 
 }
