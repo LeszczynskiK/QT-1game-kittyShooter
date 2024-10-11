@@ -4,18 +4,11 @@
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h
  mmc:Q_OBJECT
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QRect
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QSize
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QSizeF
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QString
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QTimer
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/q20functional.h
@@ -48,16 +41,10 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcontainerinfo.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcontainertools_impl.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcontiguouscache.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcoreapplication.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcoreapplication_platform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcoreevent.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdarwinhelpers.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdatastream.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdeadlinetimer.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qelapsedtimer.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qendian.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qeventloop.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qexceptionhandling.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qflags.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qfloat16.h
@@ -69,14 +56,12 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qglobalstatic.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qhash.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qhashfunctions.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiodevice.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiodevicebase.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiterable.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiterator.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlatin1stringview.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qline.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlist.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlocale.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlogging.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qmalloc.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qmap.h
@@ -86,7 +71,6 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qmetatype.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qminmax.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qnamespace.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qnativeinterface.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qnumeric.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qobject.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qobject_impl.h
@@ -140,7 +124,6 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qtversionchecks.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qtypeinfo.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qtypes.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qurl.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qutf8stringview.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qvariant.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qvarlengtharray.h
@@ -148,65 +131,34 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qxptype_traits.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qyieldcpu.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QFont
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QPixmap
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QTransform
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qaction.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qbitmap.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qbrush.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qcolor.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qcursor.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qevent.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qeventpoint.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qfont.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qfontinfo.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qfontmetrics.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qguiapplication.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qguiapplication_platform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qicon.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qimage.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qinputdevice.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qinputmethod.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qkeysequence.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpaintdevice.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpainter.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpainterpath.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpalette.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpen.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpixelformat.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpixmap.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpointingdevice.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpolygon.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qregion.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qrgb.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qrgba64.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen_platform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextoption.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtguiglobal.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtransform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qvector2d.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qvectornd.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qwindowdefs.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QWidget
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsscene.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsview.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qscrollarea.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qsizepolicy.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsexports.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qwidget.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -474,20 +426,10 @@
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.cpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h
  mmc:Q_OBJECT
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QRect
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QSize
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QSizeF
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QString
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QTimer
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/q20functional.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/q20memory.h
@@ -519,16 +461,10 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcontainerinfo.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcontainertools_impl.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcontiguouscache.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcoreapplication.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcoreapplication_platform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qcoreevent.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdarwinhelpers.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdatastream.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdeadlinetimer.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qdebug.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qelapsedtimer.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qendian.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qeventloop.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qexceptionhandling.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qflags.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qfloat16.h
@@ -540,14 +476,12 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qglobalstatic.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qhash.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qhashfunctions.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiodevice.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiodevicebase.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiterable.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qiterator.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlatin1stringview.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qline.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlist.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlocale.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qlogging.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qmalloc.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qmap.h
@@ -557,7 +491,6 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qmetatype.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qminmax.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qnamespace.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qnativeinterface.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qnumeric.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qobject.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qobject_impl.h
@@ -611,73 +544,39 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qtversionchecks.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qtypeinfo.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qtypes.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qurl.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qutf8stringview.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qvariant.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qvarlengtharray.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qversiontagging.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qxptype_traits.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qyieldcpu.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QFont
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QPixmap
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QTransform
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qaction.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qbitmap.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qbrush.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qcolor.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qcursor.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qevent.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qeventpoint.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qfont.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qfontinfo.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qfontmetrics.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qguiapplication.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qguiapplication_platform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qicon.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qimage.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qinputdevice.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qinputmethod.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qkeysequence.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpaintdevice.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpainter.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpainterpath.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpalette.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpen.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpixelformat.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpixmap.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpointingdevice.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qpolygon.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qregion.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qrgb.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qrgba64.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen_platform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextoption.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtguiglobal.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtransform.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qvector2d.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qvectornd.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qwindowdefs.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QWidget
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsscene.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsview.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qscrollarea.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qsizepolicy.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsexports.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgetsglobal.h
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qwidget.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -946,8 +845,6 @@
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h
- mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h
@@ -1135,7 +1032,6 @@
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView
- mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QWidget
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h
  mdp:/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h

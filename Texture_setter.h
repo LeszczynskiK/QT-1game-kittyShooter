@@ -1,3 +1,4 @@
+#pragma once
 #ifndef TEXTURE_SETTER_H
 #define TEXTURE_SETTER_H
 #include <QPixmap>

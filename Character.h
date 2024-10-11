@@ -1,9 +1,6 @@
+#pragma once
 #ifndef CHARACTER_H
 #define CHARACTER_H
-#include "Bullet.h"
-#include "Texture_setter.h"
-#include "Score.h"
-#include "Game.h"
 #include <QObject>
 #include <QGraphicsItem>
 #include <QGraphicsPixmapItem>
@@ -13,6 +10,9 @@
 #include <QKeyEvent>
 #include <QTimer>
 #include <iostream>
+#include "Texture_setter.h"
+#include "Score.h"
+#include "Bullet.h"
 
 class Character : public QObject, public QGraphicsPixmapItem
 {

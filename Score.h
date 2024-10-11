@@ -1,10 +1,11 @@
+#pragma once
 #ifndef SCORE_H
 #define SCORE_H
 #include <QGraphicsTextItem>
 #include <QFont>
 #include <QString>
-#include "Enemy.h"
-#include "Game.h"
+
+
 class Score : public QGraphicsTextItem
 {
 public:

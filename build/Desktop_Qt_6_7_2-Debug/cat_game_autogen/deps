@@ -203,7 +203,6 @@ cat_game_autogen/timestamp: \
 	/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
 	/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem \
 	/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView \
-	/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QWidget \
 	/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
 	/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h \
 	/home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \

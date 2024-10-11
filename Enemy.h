@@ -1,3 +1,4 @@
+#pragma once
 #ifndef ENEMY_H
 #define ENEMY_H
 #include <QGraphicsScene>
@@ -7,10 +8,8 @@
 #include <QGraphicsItem>
 #include <QObject>
 #include <QTimer>
-#include "Texture_setter.h"
-#include "Score.h"
-#include "Game.h"
 #include <iostream>
+#include "Texture_setter.h"
 
 class Enemy : public QObject, public QGraphicsPixmapItem
 {

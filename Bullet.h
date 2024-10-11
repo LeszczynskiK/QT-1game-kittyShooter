@@ -1,3 +1,4 @@
+#pragma once
 #ifndef BULLET_H
 #define BULLET_H
 #include <QGraphicsTextItem>
@@ -7,11 +8,10 @@
 #include <QGraphicsScene>
 #include <QGraphicsItem>
 #include <QTimer>
-#include "Enemy.h"
-#include "Game.h"
 #include "Texture_setter.h"
 #include "Score.h"
-#include <iostream>
+#include "Enemy.h"
+
 
 using namespace std;
 

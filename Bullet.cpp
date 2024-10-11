@@ -1,5 +1,11 @@
+#include <QTimer>
+#include <QGraphicsScene>
+#include <QList>
 #include "Bullet.h"
+#include "Enemy.h"
 #include "Game.h"
+
+
 extern Game * game;//extern global object
 
 Bullet::Bullet()  {

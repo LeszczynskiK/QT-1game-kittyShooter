@@ -1,10 +1,10 @@
+#pragma once
 #ifndef MAP_SETTER_H
 #define MAP_SETTER_H
 #include <QGraphicsScene>
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
 #include "Texture_setter.h"
-#include "Game.h"
 
 class Map_setter : public QGraphicsPixmapItem
 {
