@@ -16,7 +16,7 @@ class Enemy : public QObject, public QGraphicsPixmapItem
     Q_OBJECT;
 public:
     Enemy();
-    int index;
+    int index_ran;
     int get_index();
 public slots:
     void move();

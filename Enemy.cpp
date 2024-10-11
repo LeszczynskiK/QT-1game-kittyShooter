@@ -29,10 +29,10 @@ void Enemy::spawn()//creating enemy
     srand(time(NULL));
     int ran_x = rand()%1200 +50;//random x pos ,+50 becouse not in x border
     int ran_y = rand()%150 + 40;//random y pos, +40 becouse not in y border
-    index =rand()%10;//random index of enemy texture
+    index_ran =rand()%10;//random index of enemy texture
 
     Enemy *newEnemy = new Enemy();
-    newEnemy->setPixmap(textureSetter.enemy_txt(index));
+    newEnemy->setPixmap(textureSetter.enemy_txt(index_ran));
     newEnemy->setPos(ran_x,ran_y);
     scene()->addItem(newEnemy);
     if(pos().y()>768)
@@ -44,5 +44,5 @@ void Enemy::spawn()//creating enemy
 
 int Enemy::get_index()
 {
-    return index;
+    return index_ran;
 }

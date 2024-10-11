@@ -30,7 +30,7 @@ void Bullet::move()
             if (collidesWithItem(enemy)) {
                 enemiesToRemove.append(enemy); // add enemy to delete
                 bulletHit = true; // is enemy hit- let it know to bullet
-                game->score->increase();
+                game->score->increase(enemy);
             }
         }
     }
