@@ -22,7 +22,7 @@ Game::Game(QWidget *parent) {
     character->setFlag(QGraphicsItem::ItemIsFocusable);
     character->setFocus();
 
-    enemy = new Enemy();//spawn enemy
+    enemy = new Enemy(0);//spawn enemy - index0 - starting enemy
     scene->addItem(enemy);
 
     score = new Score();

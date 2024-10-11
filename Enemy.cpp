@@ -1,6 +1,6 @@
 #include "Enemy.h"
 
-Enemy::Enemy() {
+Enemy::Enemy(int index) : index_ran(index) {
 
     //timer to slots usage:
     QTimer *timer1 = new QTimer();
@@ -31,7 +31,7 @@ void Enemy::spawn()//creating enemy
     int ran_y = rand()%150 + 40;//random y pos, +40 becouse not in y border
     index_ran =rand()%10;//random index of enemy texture
 
-    Enemy *newEnemy = new Enemy();
+    Enemy *newEnemy = new Enemy(index_ran);
     newEnemy->setPixmap(textureSetter.enemy_txt(index_ran));
     newEnemy->setPos(ran_x,ran_y);
     scene()->addItem(newEnemy);
