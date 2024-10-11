@@ -3,7 +3,8 @@
 #include <QGraphicsTextItem>
 #include <QFont>
 #include <QString>
-
+#include "Enemy.h"
+#include "Game.h"
 class Score : public QGraphicsTextItem
 {
 public:

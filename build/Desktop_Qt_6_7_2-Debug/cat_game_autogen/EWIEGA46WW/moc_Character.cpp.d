@@ -1,7 +1,10 @@
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/EWIEGA46WW/moc_Character.cpp: /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
@@ -188,6 +191,7 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QWidget \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \

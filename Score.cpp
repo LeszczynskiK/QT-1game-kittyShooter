@@ -12,7 +12,9 @@ Score::Score(QGraphicsItem *parent) :QGraphicsTextItem(parent)
 
 void Score::increase()
 {
-    score++;
+    int reward_points=1;
+    score=score + reward_points;
+
     setPlainText(QString("Score :" + QString::number(score)));
 
 }

@@ -1,14 +1,15 @@
 #ifndef GAME_H
 #define GAME_H
-#include <QGraphicsView>
-#include <QGraphicsScene>
-#include <QWidget>
 #include "Bullet.h"
 #include "Character.h"
 #include "Enemy.h"
 #include "Map_setter.h"
 #include "Score.h"
 #include "Texture_setter.h"
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QWidget>
+
 
 class Game : public QGraphicsView
 {

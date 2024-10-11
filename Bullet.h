@@ -8,6 +8,7 @@
 #include <QGraphicsItem>
 #include <QTimer>
 #include "Enemy.h"
+#include "Game.h"
 #include "Texture_setter.h"
 #include "Score.h"
 #include <iostream>

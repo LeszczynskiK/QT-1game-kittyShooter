@@ -3,6 +3,7 @@
 #include "Bullet.h"
 #include "Texture_setter.h"
 #include "Score.h"
+#include "Game.h"
 #include <QObject>
 #include <QGraphicsItem>
 #include <QGraphicsPixmapItem>

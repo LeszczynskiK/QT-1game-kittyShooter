@@ -1,4 +1,6 @@
 #include "Bullet.h"
+#include "Game.h"
+extern Game * game;//extern global object
 
 Bullet::Bullet()  {
     setPixmap(textureSetter.bullet_txt(1));
@@ -22,6 +24,7 @@ void Bullet::move()
             if (collidesWithItem(enemy)) {
                 enemiesToRemove.append(enemy); // add enemy to delete
                 bulletHit = true; // is enemy hit- let it know to bullet
+                game->score->increase();
             }
         }
     }

@@ -29,7 +29,7 @@ void Enemy::spawn()//creating enemy
     srand(time(NULL));
     int ran_x = rand()%1200 +50;//random x pos ,+50 becouse not in x border
     int ran_y = rand()%150 + 40;//random y pos, +40 becouse not in y border
-    int index =rand()%10;//random index of enemy texture
+    index =rand()%10;//random index of enemy texture
 
     Enemy *newEnemy = new Enemy();
     newEnemy->setPixmap(textureSetter.enemy_txt(index));
@@ -40,4 +40,9 @@ void Enemy::spawn()//creating enemy
         scene()->removeItem(this);
         delete this;
     }
+}
+
+int Enemy::get_index()
+{
+    return index;
 }

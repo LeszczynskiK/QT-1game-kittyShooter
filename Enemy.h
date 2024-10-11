@@ -8,6 +8,8 @@
 #include <QObject>
 #include <QTimer>
 #include "Texture_setter.h"
+#include "Score.h"
+#include "Game.h"
 #include <iostream>
 
 class Enemy : public QObject, public QGraphicsPixmapItem
@@ -15,6 +17,8 @@ class Enemy : public QObject, public QGraphicsPixmapItem
     Q_OBJECT;
 public:
     Enemy();
+    int index;
+    int get_index();
 public slots:
     void move();
     void spawn();

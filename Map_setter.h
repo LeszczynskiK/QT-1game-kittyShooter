@@ -4,6 +4,7 @@
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
 #include "Texture_setter.h"
+#include "Game.h"
 
 class Map_setter : public QGraphicsPixmapItem
 {
