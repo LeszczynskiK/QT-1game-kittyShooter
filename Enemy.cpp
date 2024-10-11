@@ -5,9 +5,9 @@ Enemy::Enemy() {
     //timer to slots usage:
     QTimer *timer1 = new QTimer();
     connect(timer1,SIGNAL(timeout()),this,SLOT(spawn()));
-    timer1->start(2000);
+    timer1->start(2500);
 
-    int time_on_beg = 750;
+    int time_on_beg = 500;
     QTimer *timer2 = new QTimer();
     connect(timer2,SIGNAL(timeout()),this,SLOT(move()));
     timer2->start(time_on_beg);
@@ -15,7 +15,7 @@ Enemy::Enemy() {
 
 void Enemy::move()//movement of enemy
 {
-    int jump_value = 40;
+    int jump_value = 55;
     setPos(x(),y()+jump_value);
     if(pos().y() > 768)//if enemy is out of screen, delete from memory
     {

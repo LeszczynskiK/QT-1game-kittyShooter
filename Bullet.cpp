@@ -5,34 +5,44 @@ Bullet::Bullet() {
 
     QTimer *timer3 = new QTimer();
     connect(timer3,SIGNAL(timeout()),this,SLOT(move()));
-    timer3->start(250);
+    timer3->start(100);
 }
 
-void Bullet::move()
+void Bullet::move()//pointer to Points_setter
 {
-    setPos(x(),y()-30);
+    enemy_killed = 0;//start value of enemy killed
+    setPos(x(), y() - 50);
 
     QList<QGraphicsItem *> items = scene()->items(); // collision detection (bullet & enemy)
-    QList<Enemy *> enemiesToRemove; // lista do usunięcia
+    QList<Enemy *> enemiesToRemove; // list of enemy to delete
+    bool bulletHit = false; // if bullet hit enemy
 
     for (auto &item : items) {
         Enemy *enemy = dynamic_cast<Enemy *>(item);
         if (enemy) {
             if (collidesWithItem(enemy)) {
-                enemiesToRemove.append(enemy); // dodajemy do listy do usunięcia
+                enemiesToRemove.append(enemy); // dadd enemy to delete
+                bulletHit = true; // is enemy hit- let it know to bullet
             }
         }
     }
 
-    // Usuwamy wrogów z sceny
+    // delete enemy from scene
     for (Enemy *enemy : enemiesToRemove) {
+        enemy_killed++;//next enemy is killed
         scene()->removeItem(enemy);
         delete enemy; // usuwamy obiekt
     }
 
-    if(pos().y() <0)//if bullet is out of screen - delete
-    {
+    // if bullet hit enemy or out of map - delete
+    if (bulletHit || pos().y() < 0) {
         scene()->removeItem(this);
-        delete this;
+        delete this; // delete bullet
     }
 }
+
+int Bullet::return_killed()
+{
+    return enemy_killed;
+}
+

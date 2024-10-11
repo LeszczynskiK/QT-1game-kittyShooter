@@ -3,7 +3,6 @@
 Character::Character(int screenWidth,int screenHeight) {//types of character textures
     setPixmap(textureSetter.character_txt(3));//size (x,y), keep proportion, save high quality
     setPos((screenWidth - pixmap().width()) / 2, screenHeight * 0.9 - pixmap().height());//exact half/0.9 from top
-
 }
 
 void Character::keyPressEvent(QKeyEvent *event)

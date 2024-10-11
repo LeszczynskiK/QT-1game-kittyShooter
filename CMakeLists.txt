@@ -28,6 +28,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Map_setter.h Map_setter.cpp
         Bullet.h Bullet.cpp
         Texture_setter.h Texture_setter.cpp
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET cat_game APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -21,6 +21,7 @@ public slots:
     void keyPressEvent(QKeyEvent *event);
 private:
     Texture_setter textureSetter;
+
 };
 
 #endif // CHARACTER_H

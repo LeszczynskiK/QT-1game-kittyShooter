@@ -20,6 +20,7 @@ public slots:
     void spawn();
 private:
     Texture_setter textureSetter;
+
 };
 
 #endif // ENEMY_H

@@ -33,7 +33,6 @@ int main(int argc, char *argv[])
     Enemy *enemy = new Enemy();//spawn enemy
     scene->addItem(enemy);
 
-
     Map_setter *map_setter = new Map_setter();
     map_setter->setZValue(-1);//background - last layer
     scene->addItem(map_setter);
