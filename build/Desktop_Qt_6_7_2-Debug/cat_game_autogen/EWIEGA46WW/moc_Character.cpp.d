@@ -2,12 +2,14 @@
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QRect \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QSize \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QSizeF \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QString \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/q20functional.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/q20memory.h \
@@ -138,6 +140,7 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qversiontagging.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qxptype_traits.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/qyieldcpu.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QFont \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QKeyEvent \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QPixmap \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/QTransform \
@@ -183,6 +186,7 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h \

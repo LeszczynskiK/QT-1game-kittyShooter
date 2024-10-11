@@ -382,9 +382,21 @@
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h",
+			"MU",
+			"EWIEGA46WW/moc_Game.cpp",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h",
 			"MU",
 			"EWIEGA46WW/moc_Map_setter.cpp",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h",
+			"MU",
+			"EWIEGA46WW/moc_Score.cpp",
 			null
 		],
 		[
@@ -469,7 +481,17 @@
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.cpp",
 			"MU",
 			null
 		],

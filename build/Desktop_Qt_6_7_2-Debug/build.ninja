@@ -105,6 +105,22 @@ build CMakeFiles/cat_game.dir/Texture_setter.cpp.o: CXX_COMPILER__cat_game_unsca
   OBJECT_DIR = CMakeFiles/cat_game.dir
   OBJECT_FILE_DIR = CMakeFiles/cat_game.dir
 
+build CMakeFiles/cat_game.dir/Score.cpp.o: CXX_COMPILER__cat_game_unscanned_Debug /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.cpp || cmake_object_order_depends_target_cat_game
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/cat_game.dir/Score.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC -pthread
+  INCLUDES = -I/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/include -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/mkspecs/linux-g++ -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui
+  OBJECT_DIR = CMakeFiles/cat_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/cat_game.dir
+
+build CMakeFiles/cat_game.dir/Game.cpp.o: CXX_COMPILER__cat_game_unscanned_Debug /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.cpp || cmake_object_order_depends_target_cat_game
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/cat_game.dir/Game.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC -pthread
+  INCLUDES = -I/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/include -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/mkspecs/linux-g++ -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets -isystem /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui
+  OBJECT_DIR = CMakeFiles/cat_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/cat_game.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cat_game
@@ -113,7 +129,7 @@ build CMakeFiles/cat_game.dir/Texture_setter.cpp.o: CXX_COMPILER__cat_game_unsca
 #############################################
 # Link the executable cat_game
 
-build cat_game: CXX_EXECUTABLE_LINKER__cat_game_Debug CMakeFiles/cat_game.dir/cat_game_autogen/mocs_compilation.cpp.o CMakeFiles/cat_game.dir/main.cpp.o CMakeFiles/cat_game.dir/Character.cpp.o CMakeFiles/cat_game.dir/Enemy.cpp.o CMakeFiles/cat_game.dir/Map_setter.cpp.o CMakeFiles/cat_game.dir/Bullet.cpp.o CMakeFiles/cat_game.dir/Texture_setter.cpp.o | /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2 /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2 /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || cat_game_autogen cat_game_autogen_timestamp_deps
+build cat_game: CXX_EXECUTABLE_LINKER__cat_game_Debug CMakeFiles/cat_game.dir/cat_game_autogen/mocs_compilation.cpp.o CMakeFiles/cat_game.dir/main.cpp.o CMakeFiles/cat_game.dir/Character.cpp.o CMakeFiles/cat_game.dir/Enemy.cpp.o CMakeFiles/cat_game.dir/Map_setter.cpp.o CMakeFiles/cat_game.dir/Bullet.cpp.o CMakeFiles/cat_game.dir/Texture_setter.cpp.o CMakeFiles/cat_game.dir/Score.cpp.o CMakeFiles/cat_game.dir/Game.cpp.o | /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2 /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2 /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || cat_game_autogen cat_game_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = -Wl,-rpath,/home/krzysiek89/Qt/6.7.2/gcc_64/lib:  /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Widgets.so.6.7.2  /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Gui.so.6.7.2  /home/krzysiek89/Qt/6.7.2/gcc_64/lib/libQt6Core.so.6.7.2  -pthread  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
   OBJECT_DIR = CMakeFiles/cat_game.dir

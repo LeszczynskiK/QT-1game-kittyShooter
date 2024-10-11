@@ -1,6 +1,6 @@
 #include "Bullet.h"
 
-Bullet::Bullet() {
+Bullet::Bullet()  {
     setPixmap(textureSetter.bullet_txt(1));
 
     QTimer *timer3 = new QTimer();
@@ -8,9 +8,8 @@ Bullet::Bullet() {
     timer3->start(100);
 }
 
-void Bullet::move()//pointer to Points_setter
+void Bullet::move()
 {
-    enemy_killed = 0;//start value of enemy killed
     setPos(x(), y() - 50);
 
     QList<QGraphicsItem *> items = scene()->items(); // collision detection (bullet & enemy)
@@ -21,7 +20,7 @@ void Bullet::move()//pointer to Points_setter
         Enemy *enemy = dynamic_cast<Enemy *>(item);
         if (enemy) {
             if (collidesWithItem(enemy)) {
-                enemiesToRemove.append(enemy); // dadd enemy to delete
+                enemiesToRemove.append(enemy); // add enemy to delete
                 bulletHit = true; // is enemy hit- let it know to bullet
             }
         }
@@ -29,9 +28,8 @@ void Bullet::move()//pointer to Points_setter
 
     // delete enemy from scene
     for (Enemy *enemy : enemiesToRemove) {
-        enemy_killed++;//next enemy is killed
         scene()->removeItem(enemy);
-        delete enemy; // usuwamy obiekt
+        delete enemy; // delete object ( enemy)
     }
 
     // if bullet hit enemy or out of map - delete
@@ -41,8 +39,4 @@ void Bullet::move()//pointer to Points_setter
     }
 }
 
-int Bullet::return_killed()
-{
-    return enemy_killed;
-}
 

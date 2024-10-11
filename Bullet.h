@@ -1,6 +1,6 @@
 #ifndef BULLET_H
 #define BULLET_H
-
+#include <QGraphicsTextItem>
 #include <QGraphicsPixmapItem>
 #include <QPixmap>
 #include <QObject>
@@ -9,22 +9,21 @@
 #include <QTimer>
 #include "Enemy.h"
 #include "Texture_setter.h"
+#include "Score.h"
 #include <iostream>
 
 using namespace std;
 
 class Bullet : public QObject, public QGraphicsPixmapItem
 {
-    Q_OBJECT // Makro dla slotów i sygnałów
+    Q_OBJECT // makro signal and slots
 public:
     Bullet();
-    int return_killed();
 public slots:
-    void move(); // Slot do ruchu pocisku
-
+    void move(); // Slot for bullet move
 private:
-    Texture_setter textureSetter; // Instancja metody
-    int enemy_killed; // Liczba zabitych wrogów
+    Texture_setter textureSetter; // texture initialization
+    Score *score;
 };
 
 #endif // BULLET_H

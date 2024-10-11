@@ -2,6 +2,7 @@
 #define CHARACTER_H
 #include "Bullet.h"
 #include "Texture_setter.h"
+#include "Score.h"
 #include <QObject>
 #include <QGraphicsItem>
 #include <QGraphicsPixmapItem>
@@ -21,6 +22,7 @@ public slots:
     void keyPressEvent(QKeyEvent *event);
 private:
     Texture_setter textureSetter;
+    Score *score;
 
 };
 
