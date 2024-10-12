@@ -61,6 +61,9 @@ void Menu::exitGame()//method exit game
 
 void Menu::infoGame()//method instruction game
 {
+    this->close();
+    Instruction *instructionWindow = new Instruction(); //Create instruction window
+    instructionWindow->show(); //show window with instruction
     qDebug("Instruction!");
 }
 

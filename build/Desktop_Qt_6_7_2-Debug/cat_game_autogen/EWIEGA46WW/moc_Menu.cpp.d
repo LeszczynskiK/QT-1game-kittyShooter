@@ -3,7 +3,10 @@
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Instruction.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject \

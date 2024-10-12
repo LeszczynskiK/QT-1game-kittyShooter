@@ -10,6 +10,9 @@
 #include <QPushButton>//button library
 #include "Character.h"
 #include "Texture_setter.h"
+#include "Instruction.h"
+#include "Score.h"
+#include "Start_game.h"
 using namespace std;
 
 class Menu : public QGraphicsView

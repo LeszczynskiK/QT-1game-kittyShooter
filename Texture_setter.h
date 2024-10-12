@@ -15,6 +15,9 @@ public:
     QPixmap enemy_txt(int nr);
     QPixmap map_txt(int nr);
     QPixmap menu_txt(int nr);
+    QPixmap score_txt(int nr);
+    QPixmap instruction_txt(int nr);
+    QPixmap start_txt(int nr);
 
 };
 

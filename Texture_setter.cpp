@@ -16,6 +16,48 @@ QPixmap Texture_setter::bullet_txt(int number)
     return txt_bullet;
 }
 
+QPixmap Texture_setter::start_txt(int number)
+{
+    static int x=1366;
+    static int y=768;
+
+    QPixmap txt_start;
+    switch(number){
+    case 1:
+        txt_start=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/start_game.jpg").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        break;
+    }
+    return txt_start;
+}
+
+QPixmap Texture_setter::instruction_txt(int number)
+{
+    static int x=1366;
+    static int y=768;
+
+    QPixmap txt_instruction;
+    switch(number){
+    case 1:
+        txt_instruction=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/instruction.png").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        break;
+    }
+    return txt_instruction;
+}
+
+QPixmap Texture_setter::score_txt(int number)
+{
+    static int x=1366;
+    static int y=768;
+
+    QPixmap txt_score;
+    switch(number){
+    case 1:
+        txt_score=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/score.jpg").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        break;
+    }
+    return txt_score;
+}
+
 QPixmap Texture_setter::menu_txt(int number)
 {
     static int x=1366;
