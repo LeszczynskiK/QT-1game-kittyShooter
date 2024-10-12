@@ -3,7 +3,9 @@
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Instruction.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.h \

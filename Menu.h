@@ -1,3 +1,4 @@
+#pragma once
 #ifndef MENU_H
 #define MENU_H
 #include <QGraphicsView>
@@ -14,6 +15,7 @@
 #include "Score.h"
 #include "Start_game.h"
 #include "Scoreboard.h"
+
 using namespace std;
 
 class Menu : public QGraphicsView

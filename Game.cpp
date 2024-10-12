@@ -1,10 +1,8 @@
 #include "Game.h"
 
-
-
-
-Game::Game(QWidget *parent) {
+Game::Game(QWidget *parent) : QGraphicsView(parent) {
     //size of screen
+    qDebug("Game constructor called.");
     const int x_pos = 1366;
     const int y_pos = 768;
     texture_setter = new Texture_setter();//constructor of textures

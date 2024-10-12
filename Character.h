@@ -19,11 +19,13 @@ class Character : public QObject, public QGraphicsPixmapItem
     Q_OBJECT;
 public:
     Character(int size_x,int size_y);
+    void setChar(int charTaken);
 public slots:
     void keyPressEvent(QKeyEvent *event);
 private:
     Texture_setter textureSetter;
     Score *score;
+    int character_txt;//number of character choosen in start_game
 
 };
 
