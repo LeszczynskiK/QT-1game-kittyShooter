@@ -50,6 +50,9 @@ Menu::Menu(QWidget *parent)
 
 void Menu::startGame()//method start game
 {
+    this->close();
+    Start_game *start_gameWindow = new Start_game(); //Create instruction window
+    start_gameWindow->show(); //show window with instruction
     qDebug("Game Started!");
 }
 
@@ -69,5 +72,8 @@ void Menu::infoGame()//method instruction game
 
 void Menu::scoreGame()//method scoreboard
 {
+    this->close();
+    Scoreboard *scoreboardWindow = new Scoreboard();
+    scoreboardWindow->show();
     qDebug("Scoreboard!");
 }

@@ -24,7 +24,7 @@ QPixmap Texture_setter::start_txt(int number)
     QPixmap txt_start;
     switch(number){
     case 1:
-        txt_start=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/start_game.jpg").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        txt_start=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/start_game.png").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
         break;
     }
     return txt_start;
@@ -52,7 +52,7 @@ QPixmap Texture_setter::score_txt(int number)
     QPixmap txt_score;
     switch(number){
     case 1:
-        txt_score=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/score.jpg").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        txt_score=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/score.png").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
         break;
     }
     return txt_score;

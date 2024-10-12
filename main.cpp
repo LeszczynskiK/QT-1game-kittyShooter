@@ -15,8 +15,5 @@ int main(int argc, char *argv[])
     menu = new Menu();
     menu->show();
 
-    //game = new Game();
-    //game ->show();
-
     return a.exec();
 }

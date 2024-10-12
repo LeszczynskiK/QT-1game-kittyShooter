@@ -41,5 +41,6 @@ void Instruction::returnToMenu() {
     this->close(); //close instruction
     Menu *menuWindow = new Menu(); //open menu
     menuWindow->show(); //show
+    qDebug("Menu");
 }
 
