@@ -2,3 +2,4 @@
 #include "EWIEGA46WW/moc_Bullet.cpp"
 #include "EWIEGA46WW/moc_Character.cpp"
 #include "EWIEGA46WW/moc_Enemy.cpp"
+#include "EWIEGA46WW/moc_Menu.cpp"

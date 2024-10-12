@@ -388,15 +388,39 @@
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Instruction.h",
+			"MU",
+			"EWIEGA46WW/moc_Instruction.cpp",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h",
 			"MU",
 			"EWIEGA46WW/moc_Map_setter.cpp",
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.h",
+			"MU",
+			"EWIEGA46WW/moc_Menu.cpp",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h",
 			"MU",
 			"EWIEGA46WW/moc_Score.cpp",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.h",
+			"MU",
+			"EWIEGA46WW/moc_Scoreboard.cpp",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.h",
+			"MU",
+			"EWIEGA46WW/moc_Start_game.cpp",
 			null
 		],
 		[
@@ -486,12 +510,32 @@
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Instruction.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.cpp",
 			"MU",
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.cpp",
 			"MU",
 			null
 		],

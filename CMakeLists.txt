@@ -30,6 +30,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Texture_setter.h Texture_setter.cpp
         Score.h Score.cpp
         Game.h Game.cpp
+        Menu.h Menu.cpp
+        Start_game.h Start_game.cpp
+        Instruction.h Instruction.cpp
+        Scoreboard.h Scoreboard.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

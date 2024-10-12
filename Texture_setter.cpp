@@ -16,6 +16,20 @@ QPixmap Texture_setter::bullet_txt(int number)
     return txt_bullet;
 }
 
+QPixmap Texture_setter::menu_txt(int number)
+{
+    static int x=1366;
+    static int y=768;
+    QPixmap txt_menu;
+    switch(number){
+    case 1:
+        txt_menu = QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/menu.jpg").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        break;;
+        break;
+    }
+    return txt_menu;
+}
+
 QPixmap Texture_setter::character_txt(int number)
 {
     QPixmap txt_character;

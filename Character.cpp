@@ -1,7 +1,7 @@
 #include "Character.h"
 
 Character::Character(int screenWidth,int screenHeight) {//types of character textures
-    setPixmap(textureSetter.character_txt(3));//size (x,y), keep proportion, save high quality
+    setPixmap(textureSetter.character_txt(2));//size (x,y), keep proportion, save high quality
     setPos((screenWidth - pixmap().width()) / 2, screenHeight * 0.9 - pixmap().height());//exact half/0.9 from top
 }
 

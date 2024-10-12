@@ -14,6 +14,7 @@ public:
     QPixmap character_txt(int nr);
     QPixmap enemy_txt(int nr);
     QPixmap map_txt(int nr);
+    QPixmap menu_txt(int nr);
 
 };
 
