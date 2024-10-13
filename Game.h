@@ -12,7 +12,7 @@
 class Game : public QGraphicsView
 {
 public:
-    Game(QWidget *parent=0);
+    Game(QWidget *parent=0,int charTaken=0);
     QGraphicsScene *scene;
     Character *character;
     Score *score;
@@ -20,8 +20,9 @@ public:
     Enemy *enemy;
     Map_setter *map_setter;
     Bullet *bullet;
-
-
+    void setCharacter(int charType);
+private:
+    int charTaken;
 };
 
 #endif // GAME_H

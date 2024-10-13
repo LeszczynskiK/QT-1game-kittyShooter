@@ -903,10 +903,9 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.cpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.cpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/main.cpp
-/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.cpp
-/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.cpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h
  mmc:Q_OBJECT
  mdp:/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h
@@ -1327,6 +1326,7 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.cpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.cpp
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h
  mmc:Q_OBJECT

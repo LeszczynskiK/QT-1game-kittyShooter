@@ -1,6 +1,6 @@
 #include "Character.h"
 
-Character::Character(int screenWidth,int screenHeight) {//types of character textures
+Character::Character(int screenWidth,int screenHeight,int charTaken) : character_txt(charTaken) {//types of character textures
     setPixmap(textureSetter.character_txt(character_txt));//size (x,y), keep proportion, save high quality
     setPos((screenWidth - pixmap().width()) / 2, screenHeight * 0.9 - pixmap().height());//exact half/0.9 from top
 }
@@ -45,4 +45,5 @@ void Character::keyPressEvent(QKeyEvent *event)
 void Character::setChar(int charTaken)
 {
     character_txt=charTaken;
+    setPixmap(textureSetter.character_txt(character_txt));//set texture
 }

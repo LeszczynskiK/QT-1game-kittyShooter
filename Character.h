@@ -18,7 +18,7 @@ class Character : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT;
 public:
-    Character(int size_x,int size_y);
+    Character(int size_x,int size_y,int charTaken);
     void setChar(int charTaken);
 public slots:
     void keyPressEvent(QKeyEvent *event);

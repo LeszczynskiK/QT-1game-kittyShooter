@@ -21,6 +21,7 @@ class Start_game : public QGraphicsView
 public:
     Start_game(QWidget *parent=0);
     int char_taken;
+    Game *game;
 public slots:
     void returnToMenu();
     void char1_fun();//method depends from character taken number

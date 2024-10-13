@@ -1,12 +1,12 @@
 #include "Game.h"
 
-Game::Game(QWidget *parent) : QGraphicsView(parent) {
+Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(charTaken) {
     //size of screen
     qDebug("Game constructor called.");
     const int x_pos = 1366;
     const int y_pos = 768;
     texture_setter = new Texture_setter();//constructor of textures
-    character = new Character(x_pos,y_pos);//constructor of main character
+    character = new Character(x_pos, y_pos, charTaken);
 
     //its important to set scene and view size, becouse positioning character without this
     //will not position in the proper place
@@ -30,4 +30,8 @@ Game::Game(QWidget *parent) : QGraphicsView(parent) {
     map_setter = new Map_setter();
     map_setter->setZValue(-1);//background - last layer
     scene->addItem(map_setter);
+}
+
+void Game::setCharacter(int charType) {
+    character->setChar(charType);  //Set character (number is taken from start_game)
 }

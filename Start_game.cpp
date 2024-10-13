@@ -56,38 +56,29 @@ void Start_game::returnToMenu() {
 void Start_game::char1_fun()
 {
     char_taken=1;
-    if(char_taken)//if choosen
-    {
-        character->setChar(char_taken);
-    }
     qDebug("Char1");
     this->close();
-    Game *game = new Game();
+    game = new Game(nullptr, char_taken); //for parent nullptr, give char_taken value to Character class to initialize
+    //set character texture in game class becouse if you do it here,
+    //you are working on not initialised character!!!! character is inicialiset in game class, not here!!!
+    //so you can only send character type number do game method, which will initialize it
     game->show();
 }
 
 void Start_game::char2_fun()
 {
     char_taken=2;
-    if(char_taken)//if choosen(not nullprt)
-    {
-        character->setChar(char_taken);
-    }
     qDebug("Char2");
     this->close();
-    Game *game = new Game();
+    game = new Game(nullptr, char_taken); //for parent nullptr, give char_taken value to Character class to initialize
     game->show();
 }
 
 void Start_game::char3_fun()
 {
     char_taken=3;
-    if(char_taken)//if choosen
-    {
-        character->setChar(char_taken);
-    }
     qDebug("Char3");
     this->close();
-    Game *game = new Game();
+    game = new Game(nullptr, char_taken); //for parent nullptr, give char_taken value to Character class to initialize
     game->show();
 }
