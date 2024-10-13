@@ -24,7 +24,6 @@ public slots:
     void move(); // Slot for bullet move
 private:
     Texture_setter textureSetter; // texture initialization
-    Score *score;
 };
 
 #endif // BULLET_H

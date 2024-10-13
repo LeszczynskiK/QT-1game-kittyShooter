@@ -10,6 +10,9 @@
 #include <QTimer>
 #include <iostream>
 #include "Texture_setter.h"
+#include "Enemy.h"
+
+class Game;//initial declaration - to fix resursive adding at Enemy
 
 class Enemy : public QObject, public QGraphicsPixmapItem
 {

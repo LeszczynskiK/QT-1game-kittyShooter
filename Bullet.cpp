@@ -19,26 +19,24 @@ Bullet::Bullet()  {
 void Bullet::move()
 {
     setPos(x(), y() - 50);
-
     QList<QGraphicsItem *> items = scene()->items(); // collision detection (bullet & enemy)
-    QList<Enemy *> enemiesToRemove; // list of enemy to delete
+    QList<Enemy *> enemiesToRemove; // list of enemies to delete
     bool bulletHit = false; // if bullet hit enemy
 
     for (auto &item : items) {
         Enemy *enemy = dynamic_cast<Enemy *>(item);
-        if (enemy) {
-            if (collidesWithItem(enemy)) {
-                enemiesToRemove.append(enemy); // add enemy to delete
-                bulletHit = true; // is enemy hit- let it know to bullet
-                game->score->increase(enemy);
-            }
+        if (enemy && collidesWithItem(enemy)) {
+            qDebug() << "Bullet hit enemy!";
+            enemiesToRemove.append(enemy); // add enemy to delete
+            bulletHit = true; // bullet hit enemy
+            game->score->increase(enemy); // Increase score
         }
     }
 
-    // delete enemy from scene
+    // delete enemies from scene
     for (Enemy *enemy : enemiesToRemove) {
         scene()->removeItem(enemy);
-        delete enemy; // delete object ( enemy)
+        delete enemy; // delete enemy object
     }
 
     // if bullet hit enemy or out of map - delete
@@ -47,5 +45,7 @@ void Bullet::move()
         delete this; // delete bullet
     }
 }
+
+
 
 

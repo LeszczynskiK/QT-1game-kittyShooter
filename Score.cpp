@@ -1,6 +1,6 @@
 #include "Score.h"
 
-Score::Score(QGraphicsItem *parent) :QGraphicsTextItem(parent)
+Score::Score(QGraphicsItem *parent) :QGraphicsTextItem(parent), lives(5)//initialize
 {
     score =0;//start score
 
@@ -15,10 +15,16 @@ Score::Score(QGraphicsItem *parent) :QGraphicsTextItem(parent)
     point_tab[8] = 2;
     point_tab[9] = 5;
 
-    //print text
-    setPlainText(QString("Score :" + QString::number(score)));
-    setDefaultTextColor(Qt::red);
-    setFont(QFont("Times", 25)); // Times New Roman with size 25}
+    scoreTextItem = new QGraphicsTextItem(this); //create object for score
+    livesTextItem = new QGraphicsTextItem(this); //create object for lives
+
+    scoreTextItem->setDefaultTextColor(Qt::yellow); //points colour
+    scoreTextItem->setFont(QFont("Arial", 36)); //points font size
+
+    livesTextItem->setDefaultTextColor(Qt::black); //heart colour
+    livesTextItem->setFont(QFont("Arial", 36)); //heart font size
+
+    updateDisplay();
 }
 
 void Score::increase(Enemy *enemy)
@@ -65,7 +71,7 @@ void Score::increase(Enemy *enemy)
 
     score=score + reward_points;
     cout<<"Reward: "<<reward_points<<endl;
-    setPlainText(QString("Score :" + QString::number(score)));
+    updateDisplay();
     }
 
 }
@@ -75,4 +81,21 @@ int Score::getScore()
     return score;
 }
 
+void Score::decreaseLives() {
+    if (lives > 0) {//if lives are ok
+        lives--;//decrease
+    }
+    updateLivesDisplay(); //update hearts amount
+}
 
+void Score::updateLivesDisplay() {
+    setPlainText(QString("Score :" + QString::number(score) + " | Hearts: " + QString::number(lives)));
+}
+
+void Score::updateDisplay() {//show points and hearts in different lines
+    scoreTextItem->setPlainText(QString("Score: ") + QString::number(score));//points text
+    livesTextItem->setPlainText(QString("Lives: ") + QString::number(lives));//lives text
+
+    scoreTextItem->setPos(10, 10); //score text pos
+    livesTextItem->setPos(10, 65); //lives text pos
+}

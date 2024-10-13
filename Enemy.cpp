@@ -1,4 +1,6 @@
 #include "Enemy.h"
+#include "Game.h"
+extern Game *game;
 
 Enemy::Enemy(int index) : index_ran(index) {
 
@@ -17,8 +19,9 @@ void Enemy::move()//movement of enemy
 {
     int jump_value = 55;
     setPos(x(),y()+jump_value);
-    if(pos().y() > 768)//if enemy is out of screen, delete from memory
+    if (pos().y() > 768) // if enemy is out of screen
     {
+        game->score->decreaseLives(); //-1 heart
         scene()->removeItem(this);
         delete this;
     }
