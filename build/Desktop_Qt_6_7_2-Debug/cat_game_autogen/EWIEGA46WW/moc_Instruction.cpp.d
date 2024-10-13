@@ -182,6 +182,9 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qrgba64.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen_platform.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextcursor.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextdocument.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextformat.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextoption.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h \
@@ -196,6 +199,7 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QLineEdit \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QPushButton \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QWidget \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractbutton.h \
@@ -205,6 +209,7 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsscene.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsview.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qlineedit.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qscrollarea.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qsizepolicy.h \

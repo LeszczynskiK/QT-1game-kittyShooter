@@ -9,6 +9,7 @@
 #include <QObject>
 #include <iostream>
 #include <QPushButton>//button library
+#include <QLineEdit>//nickname writting library
 #include "Character.h"
 #include "Texture_setter.h"
 #include "Instruction.h"
@@ -28,6 +29,7 @@ public slots:
     void exitGame();//method - exit game
     void infoGame();//method - go to instruction
     void scoreGame();//method - go to scoreboard
+    void saveNickname();//method - type nickname
 
 private:
     QGraphicsScene *scene;
@@ -37,6 +39,9 @@ private:
     QPushButton *exitButton;//exit game
     QPushButton *infoButton;//instruction about game
     QPushButton *scoreButton;//last scores, and best scores
+    QLineEdit *nicknameInput;//nickname variable
+    string playerNickname;
+    QGraphicsTextItem *welcomeText;
 };
 
 #endif // MENU_H

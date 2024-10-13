@@ -18,16 +18,24 @@ Menu::Menu(QWidget *parent)
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
+    //sizes
+    int  button_x=350;
+    int button_y=75;
+    int button_gap=7;
+
+    //nickname type-in
+    nicknameInput = new QLineEdit(this);
+    nicknameInput->setPlaceholderText("Enter your nickname");
+    nicknameInput->setGeometry(QRect(QPoint(x_pos / 2 - button_x/2, y_pos*7/8), QSize(button_x, button_y)));
+    nicknameInput->setStyleSheet("background-color: orange; color: #1D4E89; font-size: 20px;");
+    connect(nicknameInput, &QLineEdit::returnPressed, this, &Menu::saveNickname);//if enter pressed, save nickname
+
+
     //Create buttons
     startButton = new QPushButton("Start Game", this);
     exitButton = new QPushButton("Exit Game", this);
     scoreButton = new QPushButton("Scoreboard",this);
     infoButton = new QPushButton("Instruction",this);
-
-    //sizes
-    int  button_x=350;
-    int button_y=75;
-    int button_gap=7;
 
     //style of button
     startButton->setStyleSheet("background-color: orange; color: #1D4E89; font-size: 20px;");
@@ -76,4 +84,26 @@ void Menu::scoreGame()//method scoreboard
     Scoreboard *scoreboardWindow = new Scoreboard();
     scoreboardWindow->show();
     qDebug("Scoreboard!");
+}
+
+void Menu::saveNickname()
+{
+    QString nickname = nicknameInput->text();//get text from QLineEdit
+    if (!nickname.isEmpty())//if not empty
+    {
+        playerNickname = nickname.toStdString();//save QString as string(for scoreboard needed)
+    }
+
+    if (welcomeText) {//if text saying welcome ... nickname exist - delete
+        scene->removeItem(welcomeText);
+        delete welcomeText;
+    }
+
+    //welcome "nickname" on the main page
+    QString welcomeMessage = "Welcome: " + nickname;
+    welcomeText = new QGraphicsTextItem(welcomeMessage);
+    welcomeText->setDefaultTextColor(Qt::yellow);;
+    welcomeText->setFont(QFont("Arial", 32));
+    welcomeText->setPos(10, 10);//left, top corner
+    scene->addItem(welcomeText);
 }
