@@ -1,6 +1,6 @@
 #include "Score.h"
 
-Score::Score(QGraphicsItem *parent) :QGraphicsTextItem(parent), lives(5)//initialize
+Score::Score(QGraphicsItem *parent,Game *game) :QGraphicsTextItem(parent),game(game), lives(5)//initialize
 {
     score =0;//start score
 
@@ -17,6 +17,7 @@ Score::Score(QGraphicsItem *parent) :QGraphicsTextItem(parent), lives(5)//initia
 
     scoreTextItem = new QGraphicsTextItem(this); //create object for score
     livesTextItem = new QGraphicsTextItem(this); //create object for lives
+    deathTextItem = new QGraphicsTextItem(this); //create object for death message
 
     scoreTextItem->setDefaultTextColor(Qt::yellow); //points colour
     scoreTextItem->setFont(QFont("Arial", 36)); //points font size
@@ -24,7 +25,13 @@ Score::Score(QGraphicsItem *parent) :QGraphicsTextItem(parent), lives(5)//initia
     livesTextItem->setDefaultTextColor(Qt::black); //heart colour
     livesTextItem->setFont(QFont("Arial", 36)); //heart font size
 
+    deathTextItem->setDefaultTextColor(Qt::red);//death message colour
+    deathTextItem->setFont(QFont("Arial", 185));//death message font size
+    deathTextItem->setPlainText(""); //initially empty - fill with text after losing
+
     updateDisplay();
+    deathTimer = new QTimer(this);//initialize on the beginning
+    connect(deathTimer, &QTimer::timeout, this, &Score::returnToMenu);
 }
 
 void Score::increase(Enemy *enemy)
@@ -85,7 +92,16 @@ void Score::decreaseLives() {
     if (lives > 0) {//if lives are ok
         lives--;//decrease
     }
-    updateLivesDisplay(); //update hearts amount
+    else
+    {
+        qDebug("hearts below 0!");
+        //here is place to go back to menu after being informed about the end of game
+        deathTextItem->setPlainText("You Died!!!");
+        deathTextItem->setPos(75, 270);//set pos of message about losing game
+        this->scene()->addItem(deathTextItem);
+        deathTimer->start(5000);//after 5 sec after death, go to main menu
+    }
+    updateDisplay(); //update hearts amount
 }
 
 void Score::updateLivesDisplay() {
@@ -98,4 +114,11 @@ void Score::updateDisplay() {//show points and hearts in different lines
 
     scoreTextItem->setPos(10, 10); //score text pos
     livesTextItem->setPos(10, 65); //lives text pos
+}
+
+void Score::returnToMenu()
+{
+    game->close();
+    menu = new Menu();
+    menu->show();
 }

@@ -23,7 +23,7 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     enemy = new Enemy(0);//spawn enemy - index0 - starting enemy
     scene->addItem(enemy);
 
-    score = new Score();
+    score = new Score(nullptr,this);//this->Game
     scene->addItem(score);//construct a score object
 
 

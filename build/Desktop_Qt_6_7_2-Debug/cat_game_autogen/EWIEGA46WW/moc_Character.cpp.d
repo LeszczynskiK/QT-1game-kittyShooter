@@ -1,8 +1,15 @@
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/EWIEGA46WW/moc_Character.cpp: /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Bullet.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Instruction.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject \
@@ -175,6 +182,9 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qrgba64.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qscreen_platform.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextcursor.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextdocument.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextformat.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtextoption.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtgui-config.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qtguiexports.h \
@@ -183,16 +193,24 @@
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qvector2d.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qvectornd.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QApplication \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsScene \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsTextItem \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QGraphicsView \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QLineEdit \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QPushButton \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/QWidget \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractbutton.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qapplication.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qframe.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsitem.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsscene.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qgraphicsview.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qlineedit.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qscrollarea.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtWidgets/qtwidgets-config.h \

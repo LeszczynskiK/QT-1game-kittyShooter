@@ -4,13 +4,16 @@
 #include <QGraphicsTextItem>
 #include <QFont>
 #include <QString>
+#include <QTimer>
 #include "Enemy.h"
+#include "Menu.h"
+#include "Game.h"
 
 
 class Score : public QGraphicsTextItem
 {
 public:
-    Score(QGraphicsItem *parent =0);
+    Score(QGraphicsItem *parent =0,Game *game=0);
     void increase(Enemy *enemy);
     int getScore();
     int point_tab[10];
@@ -23,6 +26,13 @@ private:
     int lives;
     QGraphicsTextItem *scoreTextItem;//score object
     QGraphicsTextItem *livesTextItem;//lives object
+    QGraphicsTextItem *deathTextItem;//death message object
+    QTimer *deathTimer;
+    Menu *menu;
+    Game *game;
+    Character *character;
+public slots:
+    void returnToMenu();
 
 };
 
