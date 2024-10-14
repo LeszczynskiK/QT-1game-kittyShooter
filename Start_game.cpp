@@ -71,22 +71,23 @@ void Start_game::char1_fun()
     //you are working on not initialised character!!!! character is inicialiset in game class, not here!!!
     //so you can only send character type number do game method, which will initialize it
     game->show();
+    this->close();//close start_game
 }
 
 void Start_game::char2_fun()
 {
     char_taken=2;
     qDebug("Char2 button clicked. char_taken: %d", char_taken);
-    this->close();
     game = new Game(nullptr, char_taken); //for parent nullptr, give char_taken value to Character class to initialize
     game->show();
+    this->close();
 }
 
 void Start_game::char3_fun()
 {
     char_taken=3;
     qDebug("Char3 button clicked. char_taken: %d", char_taken);
-    this->close();
     game = new Game(nullptr, char_taken); //for parent nullptr, give char_taken value to Character class to initialize
     game->show();
+    this->close();
 }

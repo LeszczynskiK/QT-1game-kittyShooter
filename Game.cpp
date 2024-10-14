@@ -1,10 +1,26 @@
 #include "Game.h"
 
-Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(charTaken) {
+Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(charTaken),isPaused(false) {
     //size of screen
     qDebug("Game constructor called with charTaken: %d", charTaken);
     const int x_pos = 1366;
     const int y_pos = 768;
+    int button_x=90;
+    int button_y=55;
+    int gap=15;
+
+    //pause button setting
+    pauseButton = new QPushButton("Pause", this);
+    pauseButton->setGeometry(QRect(QPoint(x_pos-gap-button_x, 0 + gap), QSize(button_x, button_y)));
+    pauseButton->setStyleSheet("background-color: orange; color: #1D4E89; font-size: 20px;"); //
+    connect(pauseButton, &QPushButton::clicked, this, &Game::togglePause);
+
+    //shop button setting
+    shopButton = new QPushButton("Shop", this);
+    shopButton->setGeometry(QRect(QPoint(x_pos-gap-button_x, 0 + 2*gap+button_y), QSize(button_x, button_y)));
+    shopButton->setStyleSheet("background-color: orange; color: #1D4E89; font-size: 20px;"); //
+    connect(shopButton, &QPushButton::clicked, this, &Game::shopUse);
+
     texture_setter = new Texture_setter();//constructor of textures
     character = new Character(x_pos, y_pos, charTaken);
     if (!character) {
@@ -72,7 +88,27 @@ Game::~Game() {//destructor
     qDebug("Destructor worked!");
 }
 
-void Game::closeEvent(QCloseEvent *event) {
-    qDebug("Game window is about to close.");
-    event->ignore();
+void Game::togglePause() {
+    if (isPaused) {
+        isPaused = false;//continue game if clicked again
+        pauseButton->setText("Pause");//change word on button(now possible is to pause game)
+    } else {
+        isPaused = true;//is stopped
+        pauseButton->setText("Resume");
+    }
 }
+
+void Game::shopUse()//open shop...
+{
+    qDebug("Shop is working...");
+    this->shopPause();
+    //leave it opened, only pause game window
+    shop = new Shop();
+    shop->show();
+}
+
+void Game::shopPause()//freeze game to buy in shop
+{
+
+}
+

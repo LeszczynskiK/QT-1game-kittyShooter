@@ -5,6 +5,20 @@ Texture_setter::Texture_setter()
 
 }
 
+QPixmap Texture_setter::shop_txt(int number)
+{
+    static int x=1366;
+    static int y=768;
+
+    QPixmap txt_shop;
+    switch(number){
+    case 1:
+        txt_shop=QPixmap("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/textures/shop1.png").scaled(x,y,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        break;
+    }
+    return txt_shop;
+}
+
 QPixmap Texture_setter::bullet_txt(int number)
 {
     QPixmap txt_bullet;

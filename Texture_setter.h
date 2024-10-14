@@ -17,6 +17,7 @@ public:
     QPixmap score_txt(int nr);
     QPixmap instruction_txt(int nr);
     QPixmap start_txt(int nr);
+    QPixmap shop_txt(int nr);
 
 };
 

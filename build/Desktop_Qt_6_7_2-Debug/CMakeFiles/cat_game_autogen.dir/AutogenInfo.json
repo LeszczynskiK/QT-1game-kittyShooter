@@ -418,6 +418,12 @@
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Shop.h",
+			"MU",
+			"EWIEGA46WW/moc_Shop.cpp",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.h",
 			"MU",
 			"EWIEGA46WW/moc_Start_game.cpp",
@@ -531,6 +537,11 @@
 		],
 		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Shop.cpp",
 			"MU",
 			null
 		],

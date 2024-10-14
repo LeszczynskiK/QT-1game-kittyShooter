@@ -18,6 +18,8 @@ cat_game_autogen/timestamp: \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.cpp \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.h \
+	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Shop.cpp \
+	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Shop.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.cpp \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.cpp \
