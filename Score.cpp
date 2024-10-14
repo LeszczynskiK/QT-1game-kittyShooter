@@ -1,4 +1,7 @@
 #include "Score.h"
+#include "Menu.h"
+#include <iostream>
+using namespace std;
 
 Score::Score(QGraphicsItem *parent,Game *game) :QGraphicsTextItem(parent),game(game), lives(5)//initialize
 {

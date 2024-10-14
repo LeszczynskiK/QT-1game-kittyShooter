@@ -4,6 +4,8 @@
 #include "Bullet.h"
 #include "Enemy.h"
 #include "Game.h"
+#include "Score.h"
+
 
 
 extern Game * game;//extern global object

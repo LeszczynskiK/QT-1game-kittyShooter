@@ -3,7 +3,6 @@
 #define TEXTURE_SETTER_H
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
-#include <iostream>
 using namespace std;
 
 class Texture_setter : public QGraphicsPixmapItem

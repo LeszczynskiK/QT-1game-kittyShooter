@@ -9,10 +9,6 @@
 #include <QGraphicsItem>
 #include <QTimer>
 #include "Texture_setter.h"
-#include "Score.h"
-#include "Enemy.h"
-
-
 using namespace std;
 
 class Bullet : public QObject, public QGraphicsPixmapItem

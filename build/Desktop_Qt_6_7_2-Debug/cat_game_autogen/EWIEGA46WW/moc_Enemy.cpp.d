@@ -1,6 +1,5 @@
 /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/EWIEGA46WW/moc_Enemy.cpp: /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-Debug/cat_game_autogen/moc_predefs.h \
-  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QTimer \
@@ -270,7 +269,6 @@
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/iostream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/iterator \
   /usr/include/c++/9/limits \

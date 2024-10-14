@@ -7,17 +7,14 @@
 #include <QGraphicsScene>
 #include <QWidget>
 #include <QObject>
-#include <iostream>
 #include <QPushButton>//button library
 #include <QLineEdit>//nickname writting library
 #include "Character.h"
 #include "Texture_setter.h"
-#include "Instruction.h"
-#include "Score.h"
-#include "Start_game.h"
-#include "Scoreboard.h"
 
-using namespace std;
+
+class Score;
+class Character;//forward declarations
 
 class Menu : public QGraphicsView
 {

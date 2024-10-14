@@ -6,8 +6,12 @@
 #include <QWidget>
 #include "Character.h"
 #include "Enemy.h"
-#include "Map_setter.h"
 #include "Bullet.h"
+#include "Score.h"
+#include "Texture_setter.h"
+#include "Map_setter.h"
+class Score;//forward declaration to fix problem with include issues
+class Character;//full daclaration is in other file
 
 class Game : public QGraphicsView
 {

@@ -4,12 +4,9 @@
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Character.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Enemy.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Game.h \
-  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Instruction.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
-  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.h \
-  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Start_game.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject \
@@ -337,7 +334,6 @@
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/iostream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/iterator \
   /usr/include/c++/9/limits \

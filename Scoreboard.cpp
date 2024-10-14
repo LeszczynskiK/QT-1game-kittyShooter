@@ -1,4 +1,5 @@
 #include "Scoreboard.h"
+#include "Menu.h"
 
 Scoreboard::Scoreboard(QWidget *parent)
 {

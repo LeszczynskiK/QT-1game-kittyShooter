@@ -12,10 +12,10 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    game = new Game();//only for test - to immediately go to game
-    game->show();
-    //menu = new Menu();
-    //menu->show();
+    //game = new Game();//only for test - to immediately go to game
+    //game->show();
+    menu = new Menu();
+    menu->show();
 
     return a.exec();
 }

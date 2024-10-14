@@ -9,10 +9,10 @@
 #include <QGraphicsView>
 #include <QKeyEvent>
 #include <QTimer>
-#include <iostream>
 #include "Texture_setter.h"
 #include "Score.h"
-#include "Bullet.h"
+
+class Score;
 
 class Character : public QObject, public QGraphicsPixmapItem
 {

@@ -1,3 +1,4 @@
+#pragma once
 #ifndef INSTRUCTION_H
 #define INSTRUCTION_H
 #include <QGraphicsView>
@@ -6,13 +7,9 @@
 #include <QGraphicsScene>
 #include <QWidget>
 #include <QObject>
-#include <iostream>
 #include <QFont>
 #include <QPushButton>//button library
-#include <string>
-#include "Character.h"
 #include "Texture_setter.h"
-#include "Menu.h"
 using namespace std;
 
 class Instruction : public QGraphicsView

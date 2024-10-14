@@ -1,4 +1,5 @@
 #include "Instruction.h"
+#include "Menu.h"
 
 Instruction::Instruction(QWidget *parent) : QGraphicsView(parent)
 {

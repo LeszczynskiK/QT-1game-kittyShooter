@@ -7,12 +7,10 @@
 #include <QGraphicsScene>
 #include <QWidget>
 #include <QObject>
-#include <iostream>
 #include <QPushButton>//button library
 #include "Character.h"
 #include "Texture_setter.h"
 #include "Character.h"
-#include "Menu.h"
 #include "Game.h"
 using namespace std;
 

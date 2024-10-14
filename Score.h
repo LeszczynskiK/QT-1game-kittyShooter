@@ -8,7 +8,10 @@
 #include "Enemy.h"
 #include "Menu.h"
 #include "Game.h"
+#include "Character.h"
 
+class Character;//forward declaration
+class Menu;
 
 class Score : public QGraphicsTextItem
 {

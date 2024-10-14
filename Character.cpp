@@ -1,4 +1,5 @@
 #include "Character.h"
+#include "Bullet.h"
 
 Character::Character(int screenWidth,int screenHeight,int charTaken) : character_txt(charTaken) {//types of character textures
     setPixmap(textureSetter.character_txt(character_txt));//size (x,y), keep proportion, save high quality

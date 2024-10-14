@@ -1,4 +1,7 @@
 #include "Menu.h"
+#include "Start_game.h"
+#include "Instruction.h"
+#include "Scoreboard.h"
 
 Menu::Menu(QWidget *parent)
 {
@@ -97,6 +100,7 @@ void Menu::saveNickname()
     if (welcomeText) {//if text saying welcome ... nickname exist - delete
         scene->removeItem(welcomeText);
         delete welcomeText;
+        welcomeText = nullptr;
     }
 
     //welcome "nickname" on the main page
