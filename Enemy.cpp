@@ -5,12 +5,12 @@ extern Game *game;
 Enemy::Enemy(int index) : index_ran(index) {
 
     //timer to slots usage:
-    QTimer *timer1 = new QTimer();
+    QTimer *timer1 = new QTimer(this);
     connect(timer1,SIGNAL(timeout()),this,SLOT(spawn()));
     timer1->start(2500);
 
     int time_on_beg = 500;
-    QTimer *timer2 = new QTimer();
+    QTimer *timer2 = new QTimer(this);
     connect(timer2,SIGNAL(timeout()),this,SLOT(move()));
     timer2->start(time_on_beg);
     }
@@ -23,7 +23,7 @@ void Enemy::move()//movement of enemy
     {
         game->score->decreaseLives(); //-1 heart
         scene()->removeItem(this);
-        delete this;
+        this->deleteLater();//delete after cycle (safer than delete->this)
     }
 }
 
@@ -38,11 +38,6 @@ void Enemy::spawn()//creating enemy
     newEnemy->setPixmap(textureSetter.enemy_txt(index_ran));
     newEnemy->setPos(ran_x,ran_y);
     scene()->addItem(newEnemy);
-    if(pos().y()>768)
-    {
-        scene()->removeItem(this);
-        delete this;
-    }
 }
 
 int Enemy::get_index()

@@ -100,7 +100,7 @@ void Menu::saveNickname()
     if (welcomeText) {//if text saying welcome ... nickname exist - delete
         scene->removeItem(welcomeText);
         delete welcomeText;
-        welcomeText = nullptr;
+        welcomeText = nullptr;//put empty place
     }
 
     //welcome "nickname" on the main page

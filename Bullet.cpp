@@ -13,7 +13,9 @@ extern Game * game;//extern global object
 Bullet::Bullet()  {
     setPixmap(textureSetter.bullet_txt(1));
 
-    QTimer *timer3 = new QTimer();
+    QTimer *timer3 = new QTimer(this);//this - timer is kid of parent(parent can be for example bullet)
+    //if bullet disappear, timer also disapear so it will free memory
+    //lags also were made becouse timer was nos free when item was deleted.... this save memory
     connect(timer3,SIGNAL(timeout()),this,SLOT(move()));
     timer3->start(100);
 }
@@ -38,13 +40,14 @@ void Bullet::move()
     // delete enemies from scene
     for (Enemy *enemy : enemiesToRemove) {
         scene()->removeItem(enemy);
-        delete enemy; // delete enemy object
+        enemy->deleteLater(); // delete enemy object
     }
 
     // if bullet hit enemy or out of map - delete
     if (bulletHit || pos().y() < 0) {
         scene()->removeItem(this);
-        delete this; // delete bullet
+        this->deleteLater(); // delete bullet
+        //deletelater - when slot and signal is done - delete
     }
 }
 

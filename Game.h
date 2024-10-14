@@ -17,6 +17,7 @@ class Game : public QGraphicsView
 {
 public:
     Game(QWidget *parent=0,int charTaken=0);
+    ~Game();
     QGraphicsScene *scene;
     Character *character;
     Score *score;
@@ -24,7 +25,8 @@ public:
     Enemy *enemy;
     Map_setter *map_setter;
     Bullet *bullet;
-    void setCharacter(int charType);
+
+    void closeEvent(QCloseEvent *event);//for test - problem with vanishing game window
 private:
     int charTaken;
 };

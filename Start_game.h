@@ -18,6 +18,7 @@ class Start_game : public QGraphicsView
 {
 public:
     Start_game(QWidget *parent=0);
+    ~Start_game();
     int char_taken;
     Game *game;
 public slots:
