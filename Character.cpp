@@ -1,30 +1,39 @@
 #include "Character.h"
 #include "Bullet.h"
+#include <iostream>
+using namespace std;
 
-Character::Character(int screenWidth,int screenHeight,int charTaken) : character_txt(charTaken) {//types of character textures
+Character::Character(int screenWidth,int screenHeight,int charTaken,int speed_left,int speed_right,int speed_up,int speed_down) :
+    character_txt(charTaken),speed_up(0),speed_down(0),speed_left(0),speed_right(0)//start initial od speed from shop
+{//types of character textures
     setPixmap(textureSetter.character_txt(character_txt));//size (x,y), keep proportion, save high quality
     setPos((screenWidth - pixmap().width()) / 2, screenHeight * 0.9 - pixmap().height());//exact half/0.9 from top
 }
 
 void Character::keyPressEvent(QKeyEvent *event)
 {
+
     int step_size = 15;
     //moving combination of character
     if(event->key() == Qt::Key_Left)
     {
-        setPos(x()-step_size,y());
+        setPos(x()-step_size-speed_left,y());
+        cout<<"left speed: "<<step_size+speed_left<<endl;
     }
     else if(event->key() == Qt::Key_Right)
     {
-        setPos(x()+step_size,y());
+        setPos(x()+step_size+speed_right,y());
+        cout<<"right speed: "<<step_size+speed_right<<endl;
     }
     else if(event->key() == Qt::Key_Up)
     {
-        setPos(x(),y()-step_size);
+        setPos(x(),y()-step_size-speed_up);
+        cout<<"up speed: "<<step_size+speed_up<<endl;
     }
     else if(event->key() == Qt::Key_Down)
     {
-        setPos(x(),y()+step_size);
+        setPos(x(),y()+step_size + speed_down);
+        cout<<"down speed: : "<<step_size+speed_down<<endl;
     }
     else if(event->key() == Qt::Key_Space)
     {

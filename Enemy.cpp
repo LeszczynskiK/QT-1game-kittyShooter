@@ -7,7 +7,7 @@ Enemy::Enemy(int index) : index_ran(index) {
     //timer to slots usage:
     QTimer *timer1 = new QTimer(this);
     connect(timer1,SIGNAL(timeout()),this,SLOT(spawn()));
-    timer1->start(2500);
+    timer1->start(25000);
 
     int time_on_beg = 500;
     QTimer *timer2 = new QTimer(this);
@@ -17,7 +17,7 @@ Enemy::Enemy(int index) : index_ran(index) {
 
 void Enemy::move()//movement of enemy
 {
-    int jump_value = 55;
+    int jump_value = 40;
     setPos(x(),y()+jump_value);
     if (pos().y() > 768) // if enemy is out of screen
     {

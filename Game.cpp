@@ -22,7 +22,7 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     connect(shopButton, &QPushButton::clicked, this, &Game::shopUse);
 
     texture_setter = new Texture_setter();//constructor of textures
-    character = new Character(x_pos, y_pos, charTaken);
+    character = new Character(x_pos, y_pos, charTaken,0,0,0,0);
     if (!character) {
         qDebug("Failed to create Character!");
     }
@@ -103,7 +103,7 @@ void Game::shopUse()//open shop...
     qDebug("Shop is working...");
     this->shopPause();
     //leave it opened, only pause game window
-    shop = new Shop();
+    shop = new Shop(nullptr,score, character);
     shop->show();
 }
 

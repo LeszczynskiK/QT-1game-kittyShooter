@@ -16,6 +16,8 @@
 #include "Shop.h"
 class Score;//forward declaration to fix problem with include issues
 class Character;//full daclaration is in other file
+class Shop;//preinitialisation
+
 
 class Game : public QGraphicsView
 {

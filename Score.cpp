@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-Score::Score(QGraphicsItem *parent,Game *game) :QGraphicsTextItem(parent),game(game), lives(5)//initialize
+Score::Score(QGraphicsItem *parent,Game *game,int money_bonus,int lives) :QGraphicsTextItem(parent),game(game),money_bonus(1), lives(5)//initialize
 {
     score =0;//start score
 
@@ -79,8 +79,11 @@ void Score::increase(Enemy *enemy)
         break;
     }
 
-    score=score + reward_points;
-    cout<<"Reward: "<<reward_points<<endl;
+    score=score + reward_points*money_bonus;
+    qDebug() << "Reward:" << reward_points;
+    qDebug() << "Bonus:" << money_bonus;
+    qDebug() << "Hearts:" << lives;
+
     updateDisplay();
     }
 
