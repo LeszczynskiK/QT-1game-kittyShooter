@@ -5,6 +5,7 @@ using namespace std;
 
 Character::Character(int screenWidth,int screenHeight,int charTaken,int speed_left,int speed_right,int speed_up,int speed_down) :
     character_txt(charTaken),speed_up(0),speed_down(0),speed_left(0),speed_right(0)//start initial od speed from shop
+//character is initialised only once
 {//types of character textures
     setPixmap(textureSetter.character_txt(character_txt));//size (x,y), keep proportion, save high quality
     setPos((screenWidth - pixmap().width()) / 2, screenHeight * 0.9 - pixmap().height());//exact half/0.9 from top
