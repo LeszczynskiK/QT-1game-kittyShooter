@@ -80,9 +80,6 @@ void Score::increase(Enemy *enemy)
     }
 
     score=score + reward_points*money_bonus;
-    qDebug() << "Reward:" << reward_points;
-    qDebug() << "Bonus:" << money_bonus;
-    qDebug() << "Hearts:" << lives;
 
     updateDisplay();
     }

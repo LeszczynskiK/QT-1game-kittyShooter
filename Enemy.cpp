@@ -2,7 +2,7 @@
 #include "Game.h"
 extern Game *game;
 
-Enemy::Enemy(int index) : index_ran(index) {
+Enemy::Enemy(int index,int slow_value) : index_ran(index),slow_value(0) {
 
     //timer to slots usage:
     QTimer *timer1 = new QTimer(this);
@@ -17,7 +17,7 @@ Enemy::Enemy(int index) : index_ran(index) {
 
 void Enemy::move()//movement of enemy
 {
-    int jump_value = 40;
+    int jump_value = 40-slow_value;
     setPos(x(),y()+jump_value);
     if (pos().y() > 768) // if enemy is out of screen
     {

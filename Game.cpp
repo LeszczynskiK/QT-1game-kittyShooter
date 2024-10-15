@@ -103,7 +103,7 @@ void Game::shopUse()//open shop...
     qDebug("Shop is working...");
     this->shopPause();
     //leave it opened, only pause game window
-    shop = new Shop(nullptr,score, character);
+    shop = new Shop(nullptr,score, character,enemy);
     shop->show();
 }
 
