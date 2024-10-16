@@ -36,12 +36,14 @@ public:
     void togglePause();
     void shopUse();
     void shopPause();
-private:
+    void resumeGame();
     int charTaken;
     QPushButton *pauseButton;//button for pause
     bool isPaused;//for pause toggle
     QTimer *gameTimer;//pause usage
     QPushButton *shopButton;
+private:
+
 };
 
 #endif // GAME_H

@@ -18,26 +18,41 @@ void Character::keyPressEvent(QKeyEvent *event)
     //moving combination of character
     if(event->key() == Qt::Key_Left)
     {
+        if (game->isPaused) {
+            return;//if paused - stop object
+        }
         setPos(x()-step_size-speed_left,y());
         cout<<"left speed: "<<step_size+speed_left<<endl;
     }
     else if(event->key() == Qt::Key_Right)
     {
+        if (game->isPaused) {
+            return;//if paused - stop object
+        }
         setPos(x()+step_size+speed_right,y());
         cout<<"right speed: "<<step_size+speed_right<<endl;
     }
     else if(event->key() == Qt::Key_Up)
     {
+        if (game->isPaused) {
+            return;//if paused - stop object
+        }
         setPos(x(),y()-step_size-speed_up);
         cout<<"up speed: "<<step_size+speed_up<<endl;
     }
     else if(event->key() == Qt::Key_Down)
     {
+        if (game->isPaused) {
+            return;//if paused - stop object
+        }
         setPos(x(),y()+step_size + speed_down);
         cout<<"down speed: : "<<step_size+speed_down<<endl;
     }
     else if(event->key() == Qt::Key_Space)
     {
+        if (game->isPaused) {
+            return;//if paused - stop object
+        }
         Bullet *bullet = new Bullet();
         bullet->setPos(x(),y());
         scene()->addItem(bullet);

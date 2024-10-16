@@ -11,6 +11,7 @@
 #include <QTimer>
 #include "Texture_setter.h"
 #include "Score.h"
+#include "Game.h"
 
 class Score;
 
@@ -30,6 +31,7 @@ private:
     Texture_setter textureSetter;
     Score *score;
     int character_txt;//number of character choosen in start_game
+    Game *game;
 
 
 };

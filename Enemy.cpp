@@ -7,7 +7,7 @@ Enemy::Enemy(int index,int slow_value) : index_ran(index),slow_value(0) {
     //timer to slots usage:
     QTimer *timer1 = new QTimer(this);
     connect(timer1,SIGNAL(timeout()),this,SLOT(spawn()));
-    timer1->start(25000);
+    timer1->start(2500);
 
     int time_on_beg = 500;
     QTimer *timer2 = new QTimer(this);
@@ -17,6 +17,9 @@ Enemy::Enemy(int index,int slow_value) : index_ran(index),slow_value(0) {
 
 void Enemy::move()//movement of enemy
 {
+    if (game->isPaused) {
+        return;//if paused - stop object
+    }
     int jump_value = 40-slow_value;
     setPos(x(),y()+jump_value);
     if (pos().y() > 768) // if enemy is out of screen
@@ -29,6 +32,9 @@ void Enemy::move()//movement of enemy
 
 void Enemy::spawn()//creating enemy
 {
+    if (game->isPaused) {
+        return;//if paused - stop object
+    }
     srand(time(NULL));
     int ran_x = rand()%1200 +50;//random x pos ,+50 becouse not in x border
     int ran_y = rand()%150 + 40;//random y pos, +40 becouse not in y border

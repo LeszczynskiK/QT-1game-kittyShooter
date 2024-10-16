@@ -22,6 +22,9 @@ Bullet::Bullet()  {
 
 void Bullet::move()
 {
+    if (game->isPaused) {
+        return;//if paused - stop object
+    }
     setPos(x(), y() - 50);
     QList<QGraphicsItem *> items = scene()->items(); // collision detection (bullet & enemy)
     QList<Enemy *> enemiesToRemove; // list of enemies to delete

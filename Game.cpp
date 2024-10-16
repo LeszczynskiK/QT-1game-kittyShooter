@@ -109,6 +109,20 @@ void Game::shopUse()//open shop...
 
 void Game::shopPause()//freeze game to buy in shop
 {
-
+    isPaused = true;
+    pauseButton->setText("Resume");
+    qDebug("Game paused for shop.");
 }
 
+void Game::resumeGame()
+{
+    if (shop) {
+        shop->close();//close shop
+        delete shop;//clear memory after shop delete
+        shop = nullptr;//there is no shop
+    }
+
+    isPaused = false;//resume game
+    pauseButton->setText("Pause");
+    qDebug("Game resumed.");
+}
