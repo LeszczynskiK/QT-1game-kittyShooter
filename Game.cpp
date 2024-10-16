@@ -89,40 +89,23 @@ Game::~Game() {//destructor
 }
 
 void Game::togglePause() {
+    isPaused = !isPaused; // Toggle pause state
+    pauseButton->setText(isPaused ? "Resume" : "Pause");//change word on button if true/falsce
     if (isPaused) {
-        isPaused = false;//continue game if clicked again
-        pauseButton->setText("Pause");//change word on button(now possible is to pause game)
+        qDebug("Game paused.");
     } else {
-        isPaused = true;//is stopped
-        pauseButton->setText("Resume");
+        qDebug("Game resumed.");
     }
 }
 
 void Game::shopUse()//open shop...
 {
     qDebug("Shop is working...");
-    this->shopPause();
-    //leave it opened, only pause game window
-    shop = new Shop(nullptr,score, character,enemy);
-    shop->show();
-}
-
-void Game::shopPause()//freeze game to buy in shop
-{
-    isPaused = true;
-    pauseButton->setText("Resume");
-    qDebug("Game paused for shop.");
-}
-
-void Game::resumeGame()
-{
-    if (shop) {
-        shop->close();//close shop
-        delete shop;//clear memory after shop delete
-        shop = nullptr;//there is no shop
+    if (!shop) {//if no shop, create new one
+        shop = new Shop(nullptr, score, character, enemy);
+        shop->show();
     }
-
-    isPaused = false;//resume game
-    pauseButton->setText("Pause");
-    qDebug("Game resumed.");
+    togglePause();//shop opened/closed - use pauze machanism
 }
+
+

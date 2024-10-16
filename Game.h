@@ -35,8 +35,6 @@ public:
     Shop *shop;
     void togglePause();
     void shopUse();
-    void shopPause();
-    void resumeGame();
     int charTaken;
     QPushButton *pauseButton;//button for pause
     bool isPaused;//for pause toggle
