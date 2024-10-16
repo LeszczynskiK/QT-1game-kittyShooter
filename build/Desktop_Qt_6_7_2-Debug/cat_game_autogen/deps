@@ -16,6 +16,8 @@ cat_game_autogen/timestamp: \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.cpp \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
+	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score_record.cpp \
+	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score_record.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.cpp \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.h \
 	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Shop.cpp \
@@ -604,6 +606,7 @@ cat_game_autogen/timestamp: \
 	/usr/include/c++/9/initializer_list \
 	/usr/include/c++/9/ios \
 	/usr/include/c++/9/iosfwd \
+	/usr/include/c++/9/iostream \
 	/usr/include/c++/9/istream \
 	/usr/include/c++/9/iterator \
 	/usr/include/c++/9/limits \

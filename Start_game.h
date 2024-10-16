@@ -20,7 +20,7 @@ public:
     Start_game(QWidget *parent=0);
     ~Start_game();
     int char_taken;
-    Game *game=nullptr;
+    Game *game;
 public slots:
     void returnToMenu();
     void char1_fun();//method depends from character taken number

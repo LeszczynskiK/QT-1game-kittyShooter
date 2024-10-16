@@ -35,6 +35,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Instruction.h Instruction.cpp
         Scoreboard.h Scoreboard.cpp
         Shop.h Shop.cpp
+        Score_record.h Score_record.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

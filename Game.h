@@ -14,6 +14,7 @@
 #include "Texture_setter.h"
 #include "Map_setter.h"
 #include "Shop.h"
+#include "Score_record.h"
 class Score;//forward declaration to fix problem with include issues
 class Character;//full daclaration is in other file
 class Shop;//preinitialisation
@@ -33,6 +34,7 @@ public:
     Map_setter *map_setter;
     Bullet *bullet;
     Shop *shop;
+    Score_record *scoreRecord;
     void togglePause();
     void shopUse();
     int charTaken;

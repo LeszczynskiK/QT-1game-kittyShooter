@@ -5,7 +5,6 @@ Start_game::Start_game(QWidget *parent) : QGraphicsView(parent)
     const int x_pos = 1366;
     const int y_pos = 768;
     texture_setter = new Texture_setter(); //texture constructor
-    Game *game = nullptr;
 
     scene = new QGraphicsScene(0, 0, x_pos, y_pos); //create scene for instruction
     setScene(scene);
@@ -47,9 +46,14 @@ Start_game::Start_game(QWidget *parent) : QGraphicsView(parent)
 }
 
 Start_game::~Start_game() {
+    qDebug("Destructor worked!");
     if (game) {
         delete game;
         game = nullptr; //after delete - null pointer
+    }
+    if (texture_setter) {
+        delete texture_setter;
+        texture_setter = nullptr; //after delete - null pointer
     }
 }
 
@@ -65,7 +69,6 @@ void Start_game::char1_fun()
 {
     char_taken=1;
     qDebug("Char1 button clicked. char_taken: %d", char_taken);
-    this->close();
     game = new Game(nullptr,char_taken); //for parent nullptr, give char_taken value to Character class to initialize
     //set character texture in game class becouse if you do it here,
     //you are working on not initialised character!!!! character is inicialiset in game class, not here!!!

@@ -9,6 +9,7 @@
 #include "Menu.h"
 #include "Game.h"
 #include "Character.h"
+#include "Score_record.h"
 
 class Character;//forward declaration
 class Menu;
@@ -35,6 +36,7 @@ private:
     Menu *menu;
     Game *game;
     Character *character;
+    Score_record *scoreRecord;
 public slots:
     void returnToMenu();
 

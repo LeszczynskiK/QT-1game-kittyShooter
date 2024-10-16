@@ -412,6 +412,12 @@
 			null
 		],
 		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score_record.h",
+			"MU",
+			"EWIEGA46WW/moc_Score_record.cpp",
+			null
+		],
+		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Scoreboard.h",
 			"MU",
 			"EWIEGA46WW/moc_Scoreboard.cpp",
@@ -532,6 +538,11 @@
 		],
 		[
 			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score_record.cpp",
 			"MU",
 			null
 		],

@@ -7,6 +7,7 @@
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Map_setter.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Menu.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score.h \
+  /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score_record.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Shop.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
@@ -335,6 +336,7 @@
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
+  /usr/include/c++/9/iostream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/iterator \
   /usr/include/c++/9/limits \

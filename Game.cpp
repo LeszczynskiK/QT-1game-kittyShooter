@@ -1,6 +1,6 @@
 #include "Game.h"
 
-Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(charTaken),isPaused(false) {
+Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(charTaken) {
     //size of screen
     qDebug("Game constructor called with charTaken: %d", charTaken);
     const int x_pos = 1366;
@@ -26,9 +26,6 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     if (!character) {
         qDebug("Failed to create Character!");
     }
-    character->setChar(charTaken);
-
-    //bullet = nullptr;//not initialised in this constructor, so need to add this
 
     //its important to set scene and view size, becouse positioning character without this
     //will not position in the proper place
@@ -42,7 +39,9 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     character->setFlag(QGraphicsItem::ItemIsFocusable);
     character->setFocus();
 
-    enemy = new Enemy(0);//spawn enemy - index0 - starting enemy
+    scoreRecord = new Score_record(0);//initialise score_record
+
+    enemy = new Enemy(0,1);//spawn enemy - index0,slow value - starting enemy
     if (!enemy) {
         qDebug("Failed to create Enemy!");
     }
@@ -54,17 +53,11 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     }
     scene->addItem(score);//construct a score object
 
-
     map_setter = new Map_setter();
     map_setter->setZValue(-1);//background - last layer
     scene->addItem(map_setter);
 }
 Game::~Game() {//destructor
-    delete character;
-    delete enemy;
-    delete score;
-    delete texture_setter;
-    delete map_setter;
     if (enemy) {
         delete enemy;
         enemy = nullptr;
@@ -85,11 +78,15 @@ Game::~Game() {//destructor
         delete map_setter;
         map_setter = nullptr;
     }
+    if (scoreRecord) {
+        delete scoreRecord;
+        scoreRecord = nullptr;
+    }
     qDebug("Destructor worked!");
 }
 
 void Game::togglePause() {
-    isPaused = !isPaused; // Toggle pause state
+    isPaused = !isPaused;//toggle pause state
     pauseButton->setText(isPaused ? "Resume" : "Pause");//change word on button if true/falsce
     if (isPaused) {
         qDebug("Game paused.");
