@@ -7,7 +7,7 @@
 
 extern Game * game;//extern global object
 
-Bullet::Bullet()  {
+Bullet::Bullet(Game* gameInstance) : game(gameInstance)  {
     setPixmap(textureSetter.bullet_txt(1));
 
     QTimer *timer3 = new QTimer(this);//this - timer is kid of parent(parent can be for example bullet)

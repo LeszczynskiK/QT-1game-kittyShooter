@@ -1,0 +1,9 @@
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/cat_game.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/edit_cache.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/rebuild_cache.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/list_install_components.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/install.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/install/local.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/install/strip.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/cat_game_autogen_timestamp_deps.dir
+/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/CMakeFiles/cat_game_autogen.dir

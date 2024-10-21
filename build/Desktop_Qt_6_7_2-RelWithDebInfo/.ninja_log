@@ -1,0 +1,27 @@
+# ninja log v6
+4	1821	1729317720459697290	cat_game_autogen/timestamp	13ac57cd1d5e2a36
+4	1821	1729317720459697290	cat_game_autogen/mocs_compilation.cpp	13ac57cd1d5e2a36
+4	1821	1729317720459697290	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/cat_game_autogen/timestamp	13ac57cd1d5e2a36
+4	1821	1729317720459697290	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/cat_game_autogen/mocs_compilation.cpp	13ac57cd1d5e2a36
+1906	6524	1729317720571711802	CMakeFiles/cat_game.dir/Score_record.cpp.o	9f8c7c2a5081ffc7
+1830	12064	1729317720495701955	CMakeFiles/cat_game.dir/Map_setter.cpp.o	a93e95f6c0943e11
+1832	13205	1729317720495701955	CMakeFiles/cat_game.dir/Texture_setter.cpp.o	9e5ba44f974aa33e
+1828	14991	1729317720491701437	CMakeFiles/cat_game.dir/main.cpp.o	f80b1f59d239bb74
+1830	15259	1729317720495701955	CMakeFiles/cat_game.dir/Enemy.cpp.o	c8a2f79912924997
+1833	15386	1729317720495701955	CMakeFiles/cat_game.dir/Game.cpp.o	3dd351930dbacd6c
+1870	15506	1729317720535707137	CMakeFiles/cat_game.dir/Scoreboard.cpp.o	19a683547dfbcdf1
+1850	15535	1729317720515704546	CMakeFiles/cat_game.dir/Instruction.cpp.o	d97f6dc46f0dde30
+1829	15610	1729317720491701437	CMakeFiles/cat_game.dir/Character.cpp.o	1a96e69754dbb8a
+1838	15692	1729317720503702992	CMakeFiles/cat_game.dir/Start_game.cpp.o	de09d58d882fe440
+1834	15869	1729317720499702473	CMakeFiles/cat_game.dir/Menu.cpp.o	78b68ab9ae8669e1
+1832	15990	1729317720495701955	CMakeFiles/cat_game.dir/Score.cpp.o	f78e54c855e81bdc
+1886	16214	1729317720551709210	CMakeFiles/cat_game.dir/Shop.cpp.o	5a8155f2e6392440
+1831	16283	1729317720495701955	CMakeFiles/cat_game.dir/Bullet.cpp.o	38a88ae53dc541fc
+1827	16695	1729317720491701437	CMakeFiles/cat_game.dir/cat_game_autogen/mocs_compilation.cpp.o	542311beea7bb4ff
+16695	18273	1729317735362166230	cat_game	e6e5b062935c3196
+9	59	1729317820505236178	cat_game_autogen/timestamp	13ac57cd1d5e2a36
+9	59	1729317820505236178	cat_game_autogen/mocs_compilation.cpp	13ac57cd1d5e2a36
+9	59	1729317820505236178	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/cat_game_autogen/timestamp	13ac57cd1d5e2a36
+9	59	1729317820505236178	/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/build/Desktop_Qt_6_7_2-RelWithDebInfo/cat_game_autogen/mocs_compilation.cpp	13ac57cd1d5e2a36
+60	7889	1729317820557261323	CMakeFiles/cat_game.dir/Enemy.cpp.o	c8a2f79912924997
+7889	9415	1729317828384520339	cat_game	e6e5b062935c3196

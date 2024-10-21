@@ -8,14 +8,17 @@
 #include <QGraphicsScene>
 #include <QGraphicsItem>
 #include <QTimer>
+#include "Game.h"
 #include "Texture_setter.h"
 using namespace std;
+class Game;
 
 class Bullet : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT // makro signal and slots
 public:
-    Bullet();
+    Game *game;
+    Bullet(Game* gameInstance);
 public slots:
     void move(); // Slot for bullet move
 private:

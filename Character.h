@@ -14,12 +14,14 @@
 #include "Game.h"
 
 class Score;
+class Game;
+extern Game *game;
 
 class Character : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT;
 public:
-    Character(int size_x,int size_y,int charTaken,int speed_left,int speed_right,int speed_up,int speed_down);
+    Character(int size_x,int size_y,int charTaken,Game* gameInstance,int speed_left,int speed_right,int speed_up,int speed_down);
     void setChar(int charTaken);
     int speed_left;//variables which upgrade speed bought in shop
     int speed_right;

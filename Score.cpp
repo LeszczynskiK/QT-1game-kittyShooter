@@ -98,11 +98,11 @@ void Score::decreaseLives() {
     else
     {
         qDebug("hearts below 0!");
-        scoreRecord->saveScore(score);//save to ranking score
         //here is place to go back to menu after being informed about the end of game
         deathTextItem->setPlainText("You Died!!!");
         deathTextItem->setPos(75, 270);//set pos of message about losing game
         this->scene()->addItem(deathTextItem);
+        scoreRecord->saveScore(score);//save to ranking score
         deathTimer->start(5000);//after 5 sec after death, go to main menu
     }
     updateDisplay(); //update hearts amount

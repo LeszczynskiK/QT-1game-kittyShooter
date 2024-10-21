@@ -22,12 +22,13 @@ void Score_record::loadScores() {
 }
 
 void Score_record::saveScore(int score) {
+    cout << "Saving score: " << score <<endl;
     scores.push_back(score); // add new score to vector
     saveScores(); // save all to file
 }
 
 void Score_record::saveScores() {
-    std::ofstream file(filename, std::ios::out | std::ios::trunc); // use trunc to overwrite
+    std::ofstream file(filename, std::ios::out); // use trunc to overwrite
     if (!file.is_open()) { // if not opened
         std::cerr << "Failed to open scores file for saving!" << std::endl;
         return;

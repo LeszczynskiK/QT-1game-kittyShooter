@@ -13,6 +13,8 @@
 
 class Character;//forward declaration
 class Menu;
+class Game;
+class Enemy;
 
 class Score : public QGraphicsTextItem
 {

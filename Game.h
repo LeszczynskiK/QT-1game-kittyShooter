@@ -18,6 +18,8 @@
 class Score;//forward declaration to fix problem with include issues
 class Character;//full daclaration is in other file
 class Shop;//preinitialisation
+class Enemy;
+class Bullet;
 
 
 class Game : public QGraphicsView
@@ -26,6 +28,7 @@ class Game : public QGraphicsView
 public:
     Game(QWidget *parent=0,int charTaken=0);
     ~Game();
+    Texture_setter *textureSetter;
     QGraphicsScene *scene;
     Character *character;
     Score *score;
@@ -34,6 +37,7 @@ public:
     Map_setter *map_setter;
     Bullet *bullet;
     Shop *shop;
+    Game *game;
     Score_record *scoreRecord;
     void togglePause();
     void shopUse();
@@ -41,6 +45,7 @@ public:
     QPushButton *pauseButton;//button for pause
     bool isPaused;//for pause toggle
     QTimer *gameTimer;//pause usage
+    void spawnEnemy();
     QPushButton *shopButton;
 private:
 
