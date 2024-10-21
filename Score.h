@@ -26,8 +26,10 @@ public:
     void decreaseLives();//method - if enemy is below y max , -1 heart
     void updateLivesDisplay();//show current lives
     void updateDisplay();//show points AND hearts
+    void  displayDeathMessage();//message after death
     int money_bonus;
     int lives;
+    bool isGameOver();
 private:
     int score;
     Enemy *enemy;
@@ -39,6 +41,7 @@ private:
     Game *game;
     Character *character;
     Score_record *scoreRecord;
+    bool gameOver;
 public slots:
     void returnToMenu();
 

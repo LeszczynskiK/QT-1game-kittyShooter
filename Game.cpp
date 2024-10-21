@@ -139,12 +139,14 @@ void Game::spawnEnemy() {
     int ran_x = rand() % 1200 + 50; // Losowa pozycja X
     int ran_y = rand() % 150 + 40;  // Losowa pozycja Y
 
+    if (!score->isGameOver()) {//if game is not over - resp enemy
     Enemy *newEnemy = new Enemy(index_ran, 0, this);
     newEnemy->setPixmap(textureSetter->enemy_txt(index_ran)); // Ustawienie tekstury
     newEnemy->setPos(ran_x, ran_y);
 
     scene->addItem(newEnemy); // Dodanie wroga do sceny
     qDebug() << "Enemy spawned at x:" << ran_x << "y:" << ran_y;
+    }
 }
 
 

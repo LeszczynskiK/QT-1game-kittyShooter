@@ -3,10 +3,10 @@
 #include <iostream>
 using namespace std;
 
-Score::Score(QGraphicsItem *parent,Game *game,int money_bonus,int lives) :QGraphicsTextItem(parent),game(game),money_bonus(1), lives(5)//initialize
+Score::Score(QGraphicsItem *parent,Game *game,int money_bonus,int lives) :QGraphicsTextItem(parent),game(game),money_bonus(1), lives(5),gameOver(false)//initialize
 {
     score =0;//start score
-
+     scoreRecord = new Score_record(score);
     point_tab[0] = 1;
     point_tab[1] = 1;
     point_tab[2] = 2;
@@ -95,18 +95,55 @@ void Score::decreaseLives() {
     if (lives > 0) {//if lives are ok
         lives--;//decrease
     }
-    else
+    else//you lose
     {
-        qDebug("hearts below 0!");
-        //here is place to go back to menu after being informed about the end of game
-        deathTextItem->setPlainText("You Died!!!");
-        deathTextItem->setPos(75, 270);//set pos of message about losing game
-        this->scene()->addItem(deathTextItem);
-        scoreRecord->saveScore(score);//save to ranking score
-        deathTimer->start(5000);//after 5 sec after death, go to main menu
+        if (!gameOver) {//if gameover is false, do this - it can be false only once, so function show only once
+            qDebug("hearts below 0!");
+            displayDeathMessage();//death info on screen
+            gameOver = true;//flag say that game is finish
+        }
     }
-    updateDisplay(); //update hearts amount
+    updateDisplay();//update hearts amount
 }
+
+void Score::displayDeathMessage()
+{
+    deathTextItem->setPlainText("You Died!!!");
+    deathTextItem->setPos(100, 200);//positon of death text
+
+    qDebug() << "Displaying death message: " << deathTextItem->toPlainText();
+
+    if (this->scene() != nullptr) {
+        //delete other counters
+        this->scene()->removeItem(scoreTextItem);
+        this->scene()->removeItem(livesTextItem);
+
+        //if exist - delete to show new
+        if (deathTextItem->scene()) {
+            this->scene()->removeItem(deathTextItem);
+        }
+
+        deathTextItem->setZValue(999);//top layer of screen
+
+        //add finish text to screen
+        if (!this->scene()->items().contains(deathTextItem)) {
+            this->scene()->addItem(deathTextItem);
+            qDebug() << "Death message added to scene.";
+        } else {
+            qDebug() << "Death message already in scene.";
+        }
+    } else {
+        qDebug() << "Scene is null, unable to add death message.";
+    }
+
+    //save score
+    scoreRecord->saveScore(score);
+
+    //go to menu fter 3 sec
+    qDebug() << "Starting death timer for 3 seconds...";
+    deathTimer->start(3000);
+}
+
 
 void Score::updateLivesDisplay() {
     setPlainText(QString("Score :" + QString::number(score) + " | Hearts: " + QString::number(lives)));
@@ -122,7 +159,25 @@ void Score::updateDisplay() {//show points and hearts in different lines
 
 void Score::returnToMenu()
 {
-    game->close();
+    if (deathTimer->isActive()) {
+        deathTimer->stop();//stop timer - i want menu only once!
+    }
+    qDebug() << "Timer timeout - returning to Menu...";
+
+    if (game != nullptr) {
+        game->close();//close window
+        qDebug() << "Game window closed.";
+    } else {
+        qDebug() << "Game object is null!";
+    }
+
+    //create new menu
     menu = new Menu();
     menu->show();
+    qDebug() << "Menu displayed.";
 }
+
+bool Score::isGameOver() {
+    return gameOver;
+}
+
