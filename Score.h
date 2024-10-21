@@ -30,8 +30,8 @@ public:
     int money_bonus;
     int lives;
     bool isGameOver();
-private:
     int score;
+private:
     Enemy *enemy;
     QGraphicsTextItem *scoreTextItem;//score object
     QGraphicsTextItem *livesTextItem;//lives object

@@ -24,7 +24,14 @@ public:
     QPushButton *backButton;//back to game
     Score *score;
     Enemy *enemy;
-
+    int MAX_SPEED=20;
+    int MAX_SLOWNESS=20;
+    int MAX_HP=5;
+    int MAX_MONEY_X=10;
+    int SPEED_COST_UPGRADE=15;
+    int SLOWNESS_COST_UPGRADE=30;
+    int HP_COST_UPGRADE =40;
+    int MONEY_X_COST_UPGRADE=10;
     //upgrade buttons and methods
     QPushButton *increaseSpeedUpButton;
     QPushButton *increaseSpeedDownButton;

@@ -136,39 +136,72 @@ void Shop::returnToMenu()//if game exist(becouse i wanted it to stay opened). cl
 
 //if u click upgrade button, add any profit do variable
 void Shop::increaseSpeedUp() {
-    character->speed_up += 1;
-    updateDisplay();
+    if(score->score > SPEED_COST_UPGRADE)
+    {
+        if(character->speed_up<MAX_SPEED)
+        {
+            character->speed_up += 1;
+            score->score = score->score -SPEED_COST_UPGRADE;
+            qDebug() << "Speed Up increased to:" << character->speed_up;
+            updateDisplay();
+            score->updateDisplay();
+        }
+    }
 }
 
 void Shop::increaseSpeedDown() {
-    character->speed_down += 1;
-    updateDisplay();
+    if(character->speed_down<MAX_SPEED)
+    {
+        character->speed_down += 1;
+        qDebug() << "Speed Down increased to:" << character->speed_down;
+        updateDisplay();
+    }
 }
 
 void Shop::increaseSpeedLeft() {
-    character->speed_left += 1;
-    updateDisplay();
+    if(character->speed_left < MAX_SPEED)
+    {
+        character->speed_left += 1;
+        qDebug() << "Speed Left increased to:" << character->speed_left;
+        updateDisplay();
+    }
 }
 
 void Shop::increaseSpeedRight() {
-    character->speed_right += 1;
-    updateDisplay();
+    if(character->speed_right < MAX_SPEED)
+    {
+        character->speed_right += 1;
+        qDebug() << "Speed Right increased to:" << character->speed_right;
+        updateDisplay();
+    }
 }
 
 void Shop::increaseMoney(){
-    score->money_bonus +=1;
-    updateDisplay();
+    if(score->money_bonus < MAX_MONEY_X)
+    {
+        score->money_bonus +=1;
+        qDebug() << "Money increased by:" << score->money_bonus;
+        updateDisplay();
+    }
 }
 
 void Shop::increaseHearts(){
-    score->lives +=1;
-    updateDisplay();
+    if(score->lives < MAX_HP)
+    {
+        score->lives +=1;
+        qDebug() << "HP increased by:" << score->lives;
+        updateDisplay();
+    }
 }
 
 void Shop::slowDownEnemy()
 {
-    enemy->slow_value +=1;
-    updateDisplay();
+    if(enemy->slow_value <= MAX_SLOWNESS)
+    {
+        enemy->slow_value +=1;
+        qDebug() << "Speed of enemy decreased by:" << enemy->slow_value;
+        updateDisplay();
+    }
 }
 
 void Shop::updateDisplay() {
