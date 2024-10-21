@@ -144,63 +144,83 @@ void Shop::increaseSpeedUp() {
             score->score = score->score -SPEED_COST_UPGRADE;
             qDebug() << "Speed Up increased to:" << character->speed_up;
             updateDisplay();
-            score->updateDisplay();
         }
     }
 }
 
 void Shop::increaseSpeedDown() {
-    if(character->speed_down<MAX_SPEED)
-    {
-        character->speed_down += 1;
-        qDebug() << "Speed Down increased to:" << character->speed_down;
-        updateDisplay();
+    if(score->score > SPEED_COST_UPGRADE){
+        if(character->speed_down<MAX_SPEED)
+        {
+            character->speed_down += 1;
+            score->score = score->score -SPEED_COST_UPGRADE;
+            qDebug() << "Speed Down increased to:" << character->speed_down;
+            updateDisplay();
+        }
     }
 }
 
 void Shop::increaseSpeedLeft() {
-    if(character->speed_left < MAX_SPEED)
-    {
-        character->speed_left += 1;
-        qDebug() << "Speed Left increased to:" << character->speed_left;
-        updateDisplay();
+    if(score->score > SPEED_COST_UPGRADE){
+        if(character->speed_left < MAX_SPEED)
+        {
+            character->speed_left += 1;
+            score->score = score->score -SPEED_COST_UPGRADE;
+            qDebug() << "Speed Left increased to:" << character->speed_left;
+            updateDisplay();
+        }
     }
 }
 
 void Shop::increaseSpeedRight() {
-    if(character->speed_right < MAX_SPEED)
-    {
-        character->speed_right += 1;
-        qDebug() << "Speed Right increased to:" << character->speed_right;
-        updateDisplay();
+    if(score->score > SPEED_COST_UPGRADE){
+        if(character->speed_right < MAX_SPEED)
+        {
+            character->speed_right += 1;
+            score->score = score->score -SPEED_COST_UPGRADE;
+            qDebug() << "Speed Right increased to:" << character->speed_right;
+            updateDisplay();
+        }
     }
 }
 
 void Shop::increaseMoney(){
-    if(score->money_bonus < MAX_MONEY_X)
+    if(score->score > MONEY_X_COST_UPGRADE)
     {
-        score->money_bonus +=1;
-        qDebug() << "Money increased by:" << score->money_bonus;
-        updateDisplay();
+        if(score->money_bonus < MAX_MONEY_X)
+        {
+            score->money_bonus +=1;
+            score->score = score->score - MONEY_X_COST_UPGRADE;
+            qDebug() << "Money increased by:" << score->money_bonus;
+            updateDisplay();
+        }
     }
 }
 
 void Shop::increaseHearts(){
-    if(score->lives < MAX_HP)
+    if(score->score > HP_COST_UPGRADE)
     {
-        score->lives +=1;
-        qDebug() << "HP increased by:" << score->lives;
-        updateDisplay();
+        if(score->lives < MAX_HP)
+        {
+            score->lives +=1;
+            score->score = score->score - HP_COST_UPGRADE;
+            qDebug() << "HP increased by:" << score->lives;
+            updateDisplay();
+        }
     }
 }
 
 void Shop::slowDownEnemy()
 {
-    if(enemy->slow_value <= MAX_SLOWNESS)
+    if(score->score > SLOWNESS_COST_UPGRADE)
     {
-        enemy->slow_value +=1;
-        qDebug() << "Speed of enemy decreased by:" << enemy->slow_value;
-        updateDisplay();
+        if(enemy->slow_value <= MAX_SLOWNESS)
+        {
+            enemy->slow_value +=1;
+            score->score = score->score -SLOWNESS_COST_UPGRADE;
+            qDebug() << "Speed of enemy decreased by:" << enemy->slow_value;
+            updateDisplay();
+        }
     }
 }
 

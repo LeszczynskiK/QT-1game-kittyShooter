@@ -11,10 +11,12 @@
 #include "Character.h"
 #include "Score_record.h"
 
+
 class Character;//forward declaration
 class Menu;
 class Game;
 class Enemy;
+class Map_setter;
 
 class Score : public QGraphicsTextItem
 {

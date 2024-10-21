@@ -22,7 +22,7 @@ Character::Character(int screenWidth,int screenHeight,int charTaken,Game * gameI
 }
 
 void Character::keyPressEvent(QKeyEvent *event) {
-    if (game->isPaused) return; // Sprawdzenie, czy gra jest wstrzymana
+    if (game->isPaused) return; //check if game is stopped
 
     int step_size = 15;
     switch (event->key()) {
@@ -45,7 +45,7 @@ void Character::keyPressEvent(QKeyEvent *event) {
         break;
     }
 
-    // Ograniczenie ruchu w poziomie
+    //movement limits
     if (pos().x() > 1366 - pixmap().width()) {
         setPos(1366 - pixmap().width(), y());
     } else if (pos().x() < 0) {

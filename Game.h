@@ -47,6 +47,7 @@ public:
     QTimer *gameTimer;//pause usage
     void spawnEnemy();
     QPushButton *shopButton;
+    void updateMap();
 private:
 
 };

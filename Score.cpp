@@ -1,5 +1,6 @@
 #include "Score.h"
 #include "Menu.h"
+#include "Map_setter.h"
 #include <iostream>
 using namespace std;
 
@@ -41,47 +42,51 @@ void Score::increase(Enemy *enemy)
 {
     if(enemy){
     int ind=enemy->get_index();
-    int reward_points;
-    switch(ind)//reward depends on food type
-    {
-    case 1:
-        reward_points = point_tab[0];
-        break;
-    case 2:
-        reward_points = point_tab[1];
-        break;
-    case 3:
-        reward_points = point_tab[2];
-        break;
-    case 4:
-        reward_points = point_tab[3];
-        break;
-    case 5:
-        reward_points = point_tab[4];
-        break;
-    case 6:
-        reward_points = point_tab[5];
-        break;
-    case 7:
-        reward_points = point_tab[6];
-        break;
-    case 8:
-        reward_points = point_tab[7];
-        break;
-    case 9:
-        reward_points = point_tab[8];
-        break;
-    case 10:
-        reward_points = point_tab[9];
-        break;
-    default:
-        reward_points = 0;
-        break;
-    }
+        int reward_points;
+        switch(ind)//reward depends on food type
+        {
+        case 1:
+            reward_points = point_tab[0];
+            break;
+        case 2:
+            reward_points = point_tab[1];
+            break;
+        case 3:
+            reward_points = point_tab[2];
+            break;
+        case 4:
+            reward_points = point_tab[3];
+            break;
+        case 5:
+            reward_points = point_tab[4];
+            break;
+        case 6:
+            reward_points = point_tab[5];
+            break;
+        case 7:
+            reward_points = point_tab[6];
+            break;
+        case 8:
+            reward_points = point_tab[7];
+            break;
+        case 9:
+            reward_points = point_tab[8];
+            break;
+        case 10:
+            reward_points = point_tab[9];
+            break;
+        default:
+            reward_points = 0;
+            break;
+        }
 
-    score=score + reward_points*money_bonus;
+        score=score + reward_points*money_bonus;
 
-    updateDisplay();
+        updateDisplay();
+        if(game)
+        {
+            game->updateMap();//if game exist, and points are acheived, change map
+        }
     }
 
 }

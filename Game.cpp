@@ -75,7 +75,7 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     }
     scene->addItem(score);//construct a score object
 
-    map_setter = new Map_setter();
+    map_setter = new Map_setter(score);
     map_setter->setZValue(-1);//background - last layer
     scene->addItem(map_setter);
 
@@ -136,16 +136,22 @@ void Game::spawnEnemy() {
         return;
     }
     int index_ran = rand() % 10;
-    int ran_x = rand() % 1200 + 50; // Losowa pozycja X
-    int ran_y = rand() % 150 + 40;  // Losowa pozycja Y
+    int ran_x = rand() % 1200 + 50;//random x pos
+    int ran_y = rand() % 150 + 40;//random y pos
 
     if (!score->isGameOver()) {//if game is not over - resp enemy
     Enemy *newEnemy = new Enemy(index_ran, 0, this);
-    newEnemy->setPixmap(textureSetter->enemy_txt(index_ran)); // Ustawienie tekstury
+    newEnemy->setPixmap(textureSetter->enemy_txt(index_ran));//set texture
     newEnemy->setPos(ran_x, ran_y);
 
-    scene->addItem(newEnemy); // Dodanie wroga do sceny
+    scene->addItem(newEnemy);//add enemy to scene
     qDebug() << "Enemy spawned at x:" << ran_x << "y:" << ran_y;
+    }
+}
+
+void Game::updateMap() {
+    if (map_setter) {
+        map_setter->changeMap(); // Wywołaj aktualizację mapy w Map_setter
     }
 }
 
