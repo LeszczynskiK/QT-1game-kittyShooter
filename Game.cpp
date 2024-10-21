@@ -78,10 +78,8 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     map_setter = new Map_setter(score);
     map_setter->setZValue(-1);//background - last layer
     scene->addItem(map_setter);
-
-    //all object fail test
-
 }
+
 Game::~Game() {//destructor
     if (enemy) {
         delete enemy;
@@ -118,18 +116,28 @@ void Game::togglePause() {
         qDebug("Game paused.");
     } else {
         qDebug("Game resumed.");
+        character->setFocus();
     }
 }
 
-void Game::shopUse()//open shop...
+void Game::shopUse() // Open shop...
 {
     qDebug("Shop is working...");
-    if (!shop) {//if no shop, create new one
+
+    //If shop nit exist, create a new one
+    if (!shop) {
         shop = new Shop(nullptr, score, character, enemy);
-        shop->show();
+        shop->show();//Show the shop
+
+        // Pause the game only if it was not paused
+        if (!isPaused) {
+            togglePause();//Pause the game when opening the shop
+        }
+    } else {
+        shop->show();// If the shop exists, display it
     }
-    togglePause();//shop opened/closed - use pauze machanism
 }
+
 
 void Game::spawnEnemy() {
     if (isPaused) {//if game exist and game is - stop game

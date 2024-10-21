@@ -131,7 +131,11 @@ Shop::Shop(QWidget *parent, Score *score, Character *character,Enemy *enemy) : Q
 
 void Shop::returnToMenu()//if game exist(becouse i wanted it to stay opened). close shop
 {
-    this->close();
+    this->close();//close and activate game again
+    if (game) {
+        game->togglePause();
+        character->setFocus();
+    }
 }
 
 //if u click upgrade button, add any profit do variable

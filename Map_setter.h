@@ -18,7 +18,7 @@ public:
     void changeMap();
 private:
     Texture_setter textureSetter;
-    int map[10]={-1,10,25,550,800,1400,2000,3000,5000,10001};
+    int map[10]={-1,50,125,350,790,1250,1900,3000,5000,10001};
 };
 
 #endif // MAP_SETTER_H
