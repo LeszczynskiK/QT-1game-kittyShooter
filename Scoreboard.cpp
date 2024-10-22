@@ -28,6 +28,33 @@ Scoreboard::Scoreboard(QWidget *parent)
     backButton->setStyleSheet("background-color: orange; color: #1D4E89; font-size: 20px;");
     connect(backButton, &QPushButton::clicked, this, &Scoreboard::returnToMenu);
 
+    scoreRecord = new Score_record();//create object
+    displayScores();//show 10 best and 10 last scores from game
+}
+
+void Scoreboard::displayScores()
+{
+    //Get last 10 scores and top 10 scores
+    std::vector<int> lastTenScores = scoreRecord->getLastTenScores();
+    std::vector<int> topTenScores = scoreRecord->getTopTenScores();
+
+    //Last 10 scores display on screen
+    for (size_t i = 0; i < lastTenScores.size(); ++i) {
+        QGraphicsTextItem *scoreItem = new QGraphicsTextItem(QString::number(i + 1) + ". " + QString::number(lastTenScores[i]));
+        scoreItem->setDefaultTextColor(Qt::white);
+        scoreItem->setFont(QFont("Arial", 30));
+        scoreItem->setPos(80, 310 + i * 40);
+        scene->addItem(scoreItem);
+    }
+
+    //Top 10 scores display on screen
+    for (size_t i = 0; i < topTenScores.size(); ++i) {
+        QGraphicsTextItem *scoreItem = new QGraphicsTextItem(QString::number(i + 1) + ". " + QString::number(topTenScores[i]));
+        scoreItem->setDefaultTextColor(Qt::white);
+        scoreItem->setFont(QFont("Arial", 30));
+        scoreItem->setPos(970, 330 + i * 40);
+        scene->addItem(scoreItem);
+    }
 }
 
 void Scoreboard::returnToMenu()

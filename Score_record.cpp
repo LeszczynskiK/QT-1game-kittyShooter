@@ -1,56 +1,58 @@
 #include "Score_record.h"
-#include <iostream>
 #include <fstream>
 #include <algorithm>
 
-Score_record::Score_record(int score) {
-    loadScores(); // load scores in object loading time
-    saveScore(score);
+Score_record::Score_record() {
+    loadScores();//Load scores when object is created
+}
+
+Score_record::Score_record(int score) : Score_record() {
+    saveScore(score);//Save the score after loading
 }
 
 void Score_record::loadScores() {
     std::ifstream file(filename);
-    if (!file.is_open()) { // if not opened
-        std::cerr << "Failed to open scores file for loading!" << std::endl;
+    if (!file.is_open()) {//If unable to open
+        cerr << "Failed to open scores file for loading!" <<endl;
         return;
     }
     int score;
-    while (file >> score) { // while reading scores
-        scores.push_back(score); // add each score to vector
+    while (file >> score) {//Read scores
+        scores.push_back(score);//Add each score to the vector
     }
     file.close();
 }
 
 void Score_record::saveScore(int score) {
-    cout << "Saving score: " << score <<endl;
-    scores.push_back(score); // add new score to vector
-    saveScores(); // save all to file
-}
-
-void Score_record::saveScores() {
-    std::ofstream file(filename, std::ios::out); // use trunc to overwrite
-    if (!file.is_open()) { // if not opened
-        std::cerr << "Failed to open scores file for saving!" << std::endl;
+    ofstream file(filename, std::ios::app);
+    if (!file.is_open()) {
+        cerr << "Failed to open scores file for saving!" << endl;
         return;
     }
-    for (int score : scores) {
-        file << score << std::endl; // each score in new line
+
+    cout << "Saving score: " << score << endl;
+    file << score << endl;//Type new score
+    if (file.good()) {
+        cout << "Score saved successfully." << endl;
+    } else {
+        cerr << "Error while saving score!" << endl;
     }
     file.close();
 }
 
-std::vector<int> Score_record::getLastTenScores() const {
-    std::vector<int> lastTen;
-    int start = std::max(0, static_cast<int>(scores.size()) - 10); // start point
+
+vector<int> Score_record::getLastTenScores() const {
+    vector<int> lastTen;
+    int start = std::max(0, static_cast<int>(scores.size()) - 10);//Start point
     for (int i = start; i < scores.size(); ++i) {
-        lastTen.push_back(scores[i]); // add to vector last 10 scores
+        lastTen.push_back(scores[i]);//Add last 10 scores to vector
     }
     return lastTen;
 }
 
-std::vector<int> Score_record::getTopTenScores() const {
-    std::vector<int> topTen = scores; // vector copy
-    std::sort(topTen.begin(), topTen.end(), std::greater<int>()); // sort from biggest to smallest
-    topTen.resize(std::min(static_cast<size_t>(10), topTen.size())); // limit to top 10 scores
+vector<int> Score_record::getTopTenScores() const {
+    vector<int> topTen = scores;//Copy of the vector
+    sort(topTen.begin(), topTen.end(), greater<int>());//Sort from highest to lowest
+    topTen.resize(std::min(static_cast<size_t>(10), topTen.size()));//Limit to top 10 scores
     return topTen;
 }

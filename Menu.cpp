@@ -89,25 +89,36 @@ void Menu::scoreGame()//method scoreboard
     qDebug("Scoreboard!");
 }
 
+QGraphicsTextItem *welcomeText = nullptr;//empty nickname - initialization
 void Menu::saveNickname()
 {
-    QString nickname = nicknameInput->text();//get text from QLineEdit
-    if (!nickname.isEmpty())//if not empty
+    QString nickname = nicknameInput->text();//Get text from QLineEdit
+    if (!nickname.isEmpty())//If not empty
     {
-        playerNickname = nickname.toStdString();//save QString as string(for scoreboard needed)
+        playerNickname = nickname.toStdString();//Save QString as string (for scoreboard needed)
     }
 
-    if (welcomeText) {//if text saying welcome ... nickname exist - delete
-        scene->removeItem(welcomeText);
-        delete welcomeText;
-        welcomeText = nullptr;//put empty place
-    }
+    // Check if scene is valid before proceeding
+    if (scene) {
+        //If text saying welcome ... nickname exists, delete it
+        if (welcomeText) {
+            qDebug() << "Removing existing welcomeText...";
+            scene->removeItem(welcomeText);
+            delete welcomeText;
+            welcomeText = nullptr;//Reset pointer
+        }
 
-    //welcome "nickname" on the main page
-    QString welcomeMessage = "Welcome: " + nickname;
-    welcomeText = new QGraphicsTextItem(welcomeMessage);
-    welcomeText->setDefaultTextColor(Qt::yellow);;
-    welcomeText->setFont(QFont("Arial", 32));
-    welcomeText->setPos(10, 10);//left, top corner
-    scene->addItem(welcomeText);
+        //Create the welcome message
+        QString welcomeMessage = "Welcome: " + nickname;
+        welcomeText = new QGraphicsTextItem(welcomeMessage);
+        welcomeText->setDefaultTextColor(Qt::yellow);
+        welcomeText->setFont(QFont("Arial", 32));
+        welcomeText->setPos(10, 10);//Left, top corner
+        scene->addItem(welcomeText);
+
+        qDebug() << "Welcome text added:" << welcomeMessage;
+    } else {
+        qDebug() << "Scene is not initialized!";
+    }
 }
+

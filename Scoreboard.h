@@ -9,6 +9,7 @@
 #include <QObject>
 #include <QPushButton>//button library
 #include "Texture_setter.h"
+#include "Score_record.h"
 using namespace std;
 
 class Scoreboard : public QGraphicsView
@@ -16,6 +17,8 @@ class Scoreboard : public QGraphicsView
     Q_OBJECT
 public:
     Scoreboard(QWidget *parent=0);
+    void displayScores();
+    Score_record *scoreRecord;
 public slots:
     void returnToMenu();
 private:

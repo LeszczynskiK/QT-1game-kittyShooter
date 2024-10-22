@@ -29,7 +29,7 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     shopButton->setStyleSheet("background-color: orange; color: #1D4E89; font-size: 20px;"); //
     connect(shopButton, &QPushButton::clicked, this, &Game::shopUse);
 
-    scoreRecord = new Score_record(0);//beginning score record
+    scoreRecord = new Score_record();//beginning score record
 
     texture_setter = new Texture_setter();//constructor of textures
     character = new Character(x_pos, y_pos, charTaken,this,0,0,0,0);

@@ -4,10 +4,12 @@
 #include <iostream>
 using namespace std;
 
-Score::Score(QGraphicsItem *parent,Game *game,int money_bonus,int lives) :QGraphicsTextItem(parent),game(game),money_bonus(1), lives(5),gameOver(false)//initialize
+Score::Score(QGraphicsItem *parent,Game *game,int money_bonus,int lives) :
+    QGraphicsTextItem(parent),game(game),
+    money_bonus(1), lives(5),gameOver(false)
 {
     score =0;//start score
-     scoreRecord = new Score_record(score);
+    scoreRecord = new Score_record();
     point_tab[0] = 1;
     point_tab[1] = 1;
     point_tab[2] = 2;
@@ -106,6 +108,10 @@ void Score::decreaseLives() {
             qDebug("hearts below 0!");
             displayDeathMessage();//death info on screen
             gameOver = true;//flag say that game is finish
+
+            //save score
+            scoreRecord->saveScore(score);
+
         }
     }
     updateDisplay();//update hearts amount
@@ -140,10 +146,6 @@ void Score::displayDeathMessage()
     } else {
         qDebug() << "Scene is null, unable to add death message.";
     }
-
-    //save score
-    scoreRecord->saveScore(score);
-
     //go to menu fter 3 sec
     qDebug() << "Starting death timer for 3 seconds...";
     deathTimer->start(3000);
