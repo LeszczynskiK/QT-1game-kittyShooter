@@ -2,8 +2,10 @@
 #include <fstream>
 #include <algorithm>
 
+
 Score_record::Score_record() {
     loadScores();//Load scores when object is created
+    string nickToSave;//predefinition
 }
 
 Score_record::Score_record(int score) : Score_record() {
@@ -55,4 +57,24 @@ vector<int> Score_record::getTopTenScores() const {
     sort(topTen.begin(), topTen.end(), greater<int>());//Sort from highest to lowest
     topTen.resize(std::min(static_cast<size_t>(10), topTen.size()));//Limit to top 10 scores
     return topTen;
+}
+
+void Score_record::saveNickname(const string& nickname) {
+    ofstream file("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/nicknames.txt", ios::app);//file with nicknames
+    if (!file.is_open()) {
+        cerr << "Failed to open nicknames file for saving!" << endl;
+        return;
+    }
+
+    qDebug() << "Nickname: " << nickname;
+    string nickToSave = nickname.empty() ? "unknown" : nickname;
+    qDebug() << "Nickname converted: " << nickToSave;
+
+    if (!file.is_open()) {
+        cerr << "Failed to open nicknames file for saving!" << endl;
+        return;
+    }
+    file << nickToSave << endl;
+    file.close();
+    qDebug() << "Nickname saved to file:" << nickToSave;//Confirm saving
 }

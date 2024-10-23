@@ -1,6 +1,6 @@
 #include "Enemy.h"
 
-Enemy::Enemy(int index,int slow_value,Game * gameInstance) : index_ran(index),slow_value(0), game(gameInstance) {
+Enemy::Enemy(int index,int slow_value,Game * gameInstance) : index_ran(index),slow_value(0), game(gameInstance){
 
     //timer to slots usage:
     int time_on_beg = 500;

@@ -57,6 +57,7 @@ Menu::Menu(QWidget *parent)
     connect(exitButton, &QPushButton::clicked, this, &Menu::exitGame);
     connect(infoButton, &QPushButton::clicked, this, &Menu::infoGame);
     connect(scoreButton, &QPushButton::clicked, this, &Menu::scoreGame);
+
 }
 
 void Menu::startGame()//method start game
@@ -97,16 +98,13 @@ void Menu::saveNickname()
     {
         playerNickname = nickname.toStdString();//Save QString as string (for scoreboard needed)
     }
+    else
+    {
+        playerNickname = "unknown";
+    }
 
     // Check if scene is valid before proceeding
     if (scene) {
-        //If text saying welcome ... nickname exists, delete it
-        if (welcomeText) {
-            qDebug() << "Removing existing welcomeText...";
-            scene->removeItem(welcomeText);
-            delete welcomeText;
-            welcomeText = nullptr;//Reset pointer
-        }
 
         //Create the welcome message
         QString welcomeMessage = "Welcome: " + nickname;
@@ -120,5 +118,6 @@ void Menu::saveNickname()
     } else {
         qDebug() << "Scene is not initialized!";
     }
+    scoreRecord->saveNickname(playerNickname);
 }
 

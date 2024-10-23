@@ -148,12 +148,12 @@ void Game::spawnEnemy() {
     int ran_y = rand() % 150 + 40;//random y pos
 
     if (!score->isGameOver()) {//if game is not over - resp enemy
-    Enemy *newEnemy = new Enemy(index_ran, 0, this);
-    newEnemy->setPixmap(textureSetter->enemy_txt(index_ran));//set texture
-    newEnemy->setPos(ran_x, ran_y);
+        Enemy *newEnemy = new Enemy(index_ran, 0, this);
+        newEnemy->setPixmap(textureSetter->enemy_txt(index_ran));//set texture
+        newEnemy->setPos(ran_x, ran_y);
 
-    scene->addItem(newEnemy);//add enemy to scene
-    qDebug() << "Enemy spawned at x:" << ran_x << "y:" << ran_y;
+        scene->addItem(newEnemy);//add enemy to scene
+        qDebug() << "Enemy spawned at x:" << ran_x << "y:" << ran_y;
     }
 }
 
@@ -162,6 +162,5 @@ void Game::updateMap() {
         map_setter->changeMap(); // Wywołaj aktualizację mapy w Map_setter
     }
 }
-
 
 

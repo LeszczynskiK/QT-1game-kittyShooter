@@ -1,6 +1,7 @@
 #include "Scoreboard.h"
 #include "Menu.h"
 
+
 Scoreboard::Scoreboard(QWidget *parent)
 {
     const int x_pos = 1366;

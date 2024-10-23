@@ -11,8 +11,8 @@
 #include <QLineEdit>//nickname writting library
 #include "Character.h"
 #include "Texture_setter.h"
-
-
+#include "Score_record.h"
+#include "Score.h"
 class Score;
 class Character;//forward declarations
 
@@ -21,6 +21,9 @@ class Menu : public QGraphicsView
     Q_OBJECT
 public:
     Menu(QWidget *parent=0);
+    string playerNickname;
+    Score_record *scoreRecord;
+    Score *score;
 public slots:
     void startGame();//method - start game
     void exitGame();//method - exit game
@@ -37,7 +40,6 @@ private:
     QPushButton *infoButton;//instruction about game
     QPushButton *scoreButton;//last scores, and best scores
     QLineEdit *nicknameInput;//nickname variable
-    string playerNickname;
     QGraphicsTextItem *welcomeText;
 };
 

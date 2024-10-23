@@ -15,6 +15,7 @@
 #include "Map_setter.h"
 #include "Shop.h"
 #include "Score_record.h"
+#include "Score.h"
 class Score;//forward declaration to fix problem with include issues
 class Character;//full daclaration is in other file
 class Shop;//preinitialisation

@@ -43,7 +43,7 @@ Score::Score(QGraphicsItem *parent,Game *game,int money_bonus,int lives) :
 void Score::increase(Enemy *enemy)
 {
     if(enemy){
-    int ind=enemy->get_index();
+        int ind=enemy->get_index();
         int reward_points;
         switch(ind)//reward depends on food type
         {
@@ -187,4 +187,3 @@ void Score::returnToMenu()
 bool Score::isGameOver() {
     return gameOver;
 }
-

@@ -10,6 +10,7 @@
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Score_record.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Shop.h \
   /home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/Texture_setter.h \
+  /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QDebug \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QList \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QObject \
   /home/krzysiek89/Qt/6.7.2/gcc_64/include/QtCore/QRect \

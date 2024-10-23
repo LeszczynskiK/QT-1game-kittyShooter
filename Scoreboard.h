@@ -9,8 +9,9 @@
 #include <QObject>
 #include <QPushButton>//button library
 #include "Texture_setter.h"
-#include "Score_record.h"
+
 using namespace std;
+class Score_record;
 
 class Scoreboard : public QGraphicsView
 {
