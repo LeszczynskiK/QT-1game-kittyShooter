@@ -16,6 +16,7 @@
 #include "Shop.h"
 #include "Score_record.h"
 #include "Score.h"
+#include "Menu.h"
 class Score;//forward declaration to fix problem with include issues
 class Character;//full daclaration is in other file
 class Shop;//preinitialisation
@@ -29,6 +30,7 @@ class Game : public QGraphicsView
 public:
     Game(QWidget *parent=0,int charTaken=0);
     ~Game();
+    Menu *menu;
     Texture_setter *textureSetter;
     QGraphicsScene *scene;
     Character *character;

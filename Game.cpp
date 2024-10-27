@@ -7,6 +7,8 @@ Game::Game(QWidget *parent,int charTaken) : QGraphicsView(parent), charTaken(cha
     isPaused = false;//game not pause in the beginning
     grabKeyboard();
 
+    Shop *shop = nullptr;
+
     QTimer *enemySpawnTimer = new QTimer(this);
     connect(enemySpawnTimer, &QTimer::timeout, this, &Game::spawnEnemy);
     enemySpawnTimer->start(2500);
@@ -143,6 +145,8 @@ void Game::spawnEnemy() {
     if (isPaused) {//if game exist and game is - stop game
         return;
     }
+
+
     int index_ran = rand() % 10;
     int ran_x = rand() % 1200 + 50;//random x pos
     int ran_y = rand() % 150 + 40;//random y pos

@@ -11,6 +11,7 @@ Menu::Menu(QWidget *parent)
 
     scene = new QGraphicsScene(0,0,x_pos,y_pos);//scene creating
     setScene(scene);
+    score = new Score();
 
     QPixmap background = texture_setter->menu_txt(1);//background from Texture_setter
     QGraphicsPixmapItem *backgroundItem = new QGraphicsPixmapItem(background);
@@ -118,6 +119,5 @@ void Menu::saveNickname()
     } else {
         qDebug() << "Scene is not initialized!";
     }
-    scoreRecord->saveNickname(playerNickname);
 }
 

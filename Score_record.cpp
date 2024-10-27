@@ -13,7 +13,7 @@ Score_record::Score_record(int score) : Score_record() {
 }
 
 void Score_record::loadScores() {
-    std::ifstream file(filename);
+    ifstream file(filename);
     if (!file.is_open()) {//If unable to open
         cerr << "Failed to open scores file for loading!" <<endl;
         return;
@@ -25,8 +25,9 @@ void Score_record::loadScores() {
     file.close();
 }
 
+//Save score to .txt
 void Score_record::saveScore(int score) {
-    ofstream file(filename, std::ios::app);
+    ofstream file(filename, ios::app);
     if (!file.is_open()) {
         cerr << "Failed to open scores file for saving!" << endl;
         return;
@@ -42,10 +43,9 @@ void Score_record::saveScore(int score) {
     file.close();
 }
 
-
 vector<int> Score_record::getLastTenScores() const {
     vector<int> lastTen;
-    int start = std::max(0, static_cast<int>(scores.size()) - 10);//Start point
+    int start = max(0, static_cast<int>(scores.size()) - 10);//Start point
     for (int i = start; i < scores.size(); ++i) {
         lastTen.push_back(scores[i]);//Add last 10 scores to vector
     }
@@ -55,26 +55,7 @@ vector<int> Score_record::getLastTenScores() const {
 vector<int> Score_record::getTopTenScores() const {
     vector<int> topTen = scores;//Copy of the vector
     sort(topTen.begin(), topTen.end(), greater<int>());//Sort from highest to lowest
-    topTen.resize(std::min(static_cast<size_t>(10), topTen.size()));//Limit to top 10 scores
+    topTen.resize(min(static_cast<size_t>(10), topTen.size()));//Limit to top 10 scores
     return topTen;
 }
 
-void Score_record::saveNickname(const string& nickname) {
-    ofstream file("/home/krzysiek89/Desktop/QT_aplikacje/Kitty_game/cat_game/nicknames.txt", ios::app);//file with nicknames
-    if (!file.is_open()) {
-        cerr << "Failed to open nicknames file for saving!" << endl;
-        return;
-    }
-
-    qDebug() << "Nickname: " << nickname;
-    string nickToSave = nickname.empty() ? "unknown" : nickname;
-    qDebug() << "Nickname converted: " << nickToSave;
-
-    if (!file.is_open()) {
-        cerr << "Failed to open nicknames file for saving!" << endl;
-        return;
-    }
-    file << nickToSave << endl;
-    file.close();
-    qDebug() << "Nickname saved to file:" << nickToSave;//Confirm saving
-}

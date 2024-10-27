@@ -187,3 +187,5 @@ void Score::returnToMenu()
 bool Score::isGameOver() {
     return gameOver;
 }
+
+

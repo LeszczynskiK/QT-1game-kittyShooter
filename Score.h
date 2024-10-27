@@ -33,6 +33,9 @@ public:
     int lives;
     bool isGameOver();
     int score;
+    int getLives() {
+        return lives;
+    }
 private:
     Enemy *enemy;
     QGraphicsTextItem *scoreTextItem;//score object

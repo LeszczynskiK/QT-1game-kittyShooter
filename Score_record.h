@@ -13,10 +13,8 @@ public:
     Score_record();
     Score_record(int score);
     void saveScore(int score);
-    void saveNickname(const string& nickname);
     vector<int> getLastTenScores() const;
     vector<int> getTopTenScores() const;
-    string nickToSave;
     Menu *menu;
 
 
